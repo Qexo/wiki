@@ -5,7 +5,6 @@ on:
     branches:
       - master
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,7 +21,7 @@ jobs:
         run: yarn docs:build
       - name: Deploy to Pages
         run: |
-          cd .vitepress/dist 
+          cd docs/.vitepress/dist 
           git init
           git config user.name "Abudu"
           git config user.email "${{ secrets.GIT_EMAIL }}"
