@@ -1,10 +1,9 @@
 name: pushDocs
 
 on:
-  // 配置当push进入什么分支的时候执行
   push:
-    branches: 
-     - master
+    branches:
+      - master
 
 
 jobs:
