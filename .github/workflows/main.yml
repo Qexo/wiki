@@ -23,7 +23,8 @@ jobs:
         run: |
           cd docs/.vitepress/dist 
           git init
-          git config user.name "Abudu"
+          git branch -m
+          git config user.name "am-abudu"
           git config user.email "${{ secrets.GIT_EMAIL }}"
           git add -A
           git commit -m 'deploy'
