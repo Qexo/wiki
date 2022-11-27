@@ -297,7 +297,7 @@
 }
 
 ```
-## pub/status
+### pub/status
 获取博客基本信息 **无需鉴权**
 ```json
 {
