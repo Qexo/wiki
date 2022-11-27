@@ -7,18 +7,13 @@ on:
 
 
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-     // 具体的执行步骤
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@main
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@main
+        uses: actions/setup-node@1
         with:
           node-version:  ${{ matrix.node }}
       - name: Install dependencies
