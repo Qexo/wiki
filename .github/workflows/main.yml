@@ -23,9 +23,9 @@ jobs:
         run: |
           cd docs/.vitepress/dist 
           git init
-          git branch -m
+          git branch -m master
           git config user.name "am-abudu"
           git config user.email "${{ secrets.GIT_EMAIL }}"
           git add -A
           git commit -m 'deploy'
-          git push -f https://gelxgx:${{ secrets.ACCESS_TOKEN }}@github.com/Qexo/Wiki.git master:gh-pages
+          git push -f https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/Qexo/Wiki.git master:gh-pages
