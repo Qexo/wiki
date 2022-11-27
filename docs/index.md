@@ -1,0 +1,31 @@
+---
+layout: home
+title: Qexo
+titleTemplate: 一个快速、美观、强大的在线 Hexo 编辑器
+hero:
+  name: Qexo
+  text: 一个快速、美观、强大的在线 Hexo 编辑器
+  tagline: 让博客变得简单
+  actions:
+    - theme: brand
+      text: 快速开始
+      link: /start
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/Qexo/Qexo
+
+features:
+  - icon: 🍃
+    title: 简单
+    details: 支持使用 Vercel 零成本一键部署, 您只需要配置一个免费数据库
+  - icon: 🛠️
+    title: 强大
+    details: 无限的拓展性, 应有尽有的配套功能尽在掌握
+  - icon: 😎
+    title: 美观
+    details: 基于 Bootstrap & Argon 的现代化响应式风格
+  - icon: 🏆
+    title: 全面
+    details: Python 后端, 支持多种平台和数据库
+---
+
