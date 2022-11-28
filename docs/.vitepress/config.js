@@ -36,6 +36,7 @@ module.exports = {
                 text: '拓展',
                 items: [
                     { text: '接入友链', link: '/exts/flinks' },
+                    { text: '接入说说', link: '/exts/talks' },
                     { text: '自定字段', link: '/exts/custom' },
                     { text: '访客统计', link: '/exts/statistic' }
                 ]
