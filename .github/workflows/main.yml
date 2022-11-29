@@ -36,7 +36,7 @@ jobs:
           cd ..
           git clone https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/am-abudu/hexo_source_code.git
           rm -rf hexo_source_code/source/qexo/*
-          cp -r docs/.vitepress/dist/* hexo_source_code/source/qexo/*
+          cp -r dist/* hexo_source_code/source/qexo/
           cd hexo_source_code
           git add -A
           git commit -m 'deploy'
