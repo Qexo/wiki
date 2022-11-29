@@ -19,13 +19,13 @@ jobs:
         run: npm install
       - name: Build VuePress
         run: yarn build
-      - name: Deploy to Pages
-        run: |
-          cd docs/.vitepress/dist 
-          git init
+      # - name: Deploy to Pages
+      #   run: |
+      #     cd docs/.vitepress/dist 
+      #     git init
       #     git branch -m master
-          git config user.name "am-abudu"
-          git config user.email "${{ secrets.GIT_EMAIL }}"
+      #     git config user.name "am-abudu"
+      #     git config user.email "${{ secrets.GIT_EMAIL }}"
       #     git add -A
       #     git commit -m 'deploy'
       #     git push -f https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/Qexo/Wiki.git master:gh-pages
@@ -34,6 +34,8 @@ jobs:
           cd docs/.vitepress/dist
           rm .git
           cd ..
+          git config --global user.name "am-abudu"
+          git config --global user.email "${{ secrets.GIT_EMAIL }}"
           git clone https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/am-abudu/hexo_source_code.git
           mkdir hexo_source_code/source/qexo/
           rm -rf hexo_source_code/source/qexo/*
