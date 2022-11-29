@@ -43,4 +43,4 @@ jobs:
           cd hexo_source_code
           git add -A
           git commit -m 'deploy'
-          git push https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/Qexo/hexo_source_code.git
+          git push https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/am-abudu/hexo_source_code.git
