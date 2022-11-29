@@ -31,6 +31,7 @@ jobs:
           git push -f https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/Qexo/Wiki.git master:gh-pages
       - name: Deploy to My Blog
         run: |
+          cd docs/.vitepress/dist
           rm -rf .git
           cd ..
           git clone https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/am-abudu/hexo_source_code.git
