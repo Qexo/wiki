@@ -11,10 +11,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-      - name: Use Node.js 14
+      - name: Use Node.js 18
         uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: '18'
       - name: Install dependencies
         run: npm install
       - name: Build VuePress
@@ -31,8 +31,8 @@ jobs:
       #     git push -f https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/Qexo/Wiki.git master:gh-pages
       - name: Deploy to My Blog
         run: |
-          cd docs/.vitepress/dist 
-          rm .git
+          cd docs/.vitepress/dist
+          # rm .git
           cd ..
           git clone https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/am-abudu/hexo_source_code.git
           rm -rf hexo_source_code/source/qexo/*
