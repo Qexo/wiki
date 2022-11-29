@@ -1,5 +1,6 @@
 module.exports = {
     title: 'Qexo',
+    base: '/qexo/',
     description: '一个快速、强大、漂亮的在线 Hexo 编辑器',
     head: [
         ['link', { rel: 'icon', href: '//unpkg.com/qexo-static@1.4.0/assets/img/brand/favicon.ico' }]

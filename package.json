@@ -6,7 +6,7 @@
   "author": "Abudu",
   "license": "GPL 3.0",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.4"
+    "vitepress": "^1.0.0-alpha.29"
   },
   "scripts": {
     "dev": "vitepress dev docs",
