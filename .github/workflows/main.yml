@@ -35,6 +35,7 @@ jobs:
           # rm .git
           cd ..
           git clone https://am-abudu:${{ secrets.ACCESS_TOKEN }}@github.com/am-abudu/hexo_source_code.git
+          mkdir hexo_source_code/source/qexo/
           rm -rf hexo_source_code/source/qexo/*
           cp -r dist/* hexo_source_code/source/qexo/
           cd hexo_source_code
