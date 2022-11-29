@@ -27,7 +27,7 @@
 ### 下载 Release
 在 [Release](https://github.com/am-abudu/Qexo/releases) 下载最新的版本 *Source code (zip)* 并解压
 ### 准备数据库
-参考 [Django 官方文档](https://docs.djangoproject.com/zh-hans/3.2/ref/databases/) 修改 `/core` 下的 `settings.py` 文件配置数据库
+参考 [Django 官方文档](https://docs.djangoproject.com/zh-hans/3.2/ref/databases/)
 | 官方支持 | 第三方支持 |
 | --- | --- |
 | PostgreSQL | CockroachDB |
