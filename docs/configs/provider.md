@@ -15,6 +15,10 @@ Qexo 在 2.0 版本支持了服务商拓展
 ```
 username/repo
 ```
+参考文献: 
+https://blog.cyfan.top/p/e626cb30.html
+https://www.oplog.cn/archives/24998.html
+https://blog.cyfan.top/p/e626cb30.html
 ### 项目分支
 您 Hexo 自动化部署所在仓库的分支
 ```
