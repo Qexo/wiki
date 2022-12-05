@@ -11,12 +11,13 @@ Qexo 中的 Webhook 指 /api/webhook 用于自动化操作，目前可用于自�
 ## 安装/更新后出现 5xx 错误
 Qexo 每个 Release 都经过 Dev 分支的测试，一般情况下不会出现较大问题，如果你遇到了500等错误，请尝试以下步骤
 1. 检查数据库配置
-2. 清除浏览器缓存
-3. 在高级设置中点击“修复”按钮
-4. 若无法登录请使用API: yoursite.com/pub/fix?token=你的APIKEY
-5. 保留数据库配置的环境变量并重新 Fork 仓库部署
-6. 重新部署整个程序
-7. 尝试 Dev 分支
+2. 清除浏览器缓存 / 程序缓存
+3. 在 `/settings.html` 页面检查 Hexo 服务商配置并点击保存
+4. 在 `/advanced.html` 中点击“修复”按钮
+5. 若无法登录请使用API: `/pub/fix?token=(Your API Key)`
+6. 保留数据库配置的环境变量并重新部署
+7. 重新部署整个程序
+8. 尝试 Dev 分支
 ## AssertionError("xxx object ... its id attribute is set to None.")
 请检查你是否曾使用过0.01或0.1版本，这两个版本有严重问题，请重新创建数据库并部署
 ## 如何创建子目录下的文章
