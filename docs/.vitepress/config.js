@@ -43,6 +43,12 @@ module.exports = {
                 ]
             },
             {
+                text: '实践',
+                items: [
+                    { text: 'SM.MS图床', link: '/practice/smms' },
+                ]
+            },
+            {
                 text: '开发',
                 items: [
                     { text: 'API文档', link: '/dev/api' },
