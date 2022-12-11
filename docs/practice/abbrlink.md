@@ -5,7 +5,7 @@
 ```
 npm install hexo-abbrlink --save
 ```
-在 `config.yml` 文件中修改文章固定连接:
+在 `_config.yml` 文件中修改文章固定连接:
 ```
 permalink: posts/:abbrlink/     # 可改为你需要的连接，例如archives/:abbrlink.html
 ```
