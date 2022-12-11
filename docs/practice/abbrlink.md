@@ -10,13 +10,11 @@ npm install hexo-abbrlink --save
 permalink: posts/:abbrlink/     # 可改为你需要的连接，例如archives/:abbrlink.html
 ```
 然后添加两个设置:
-alg -- 算法（支持crc16和crc32，默认为crc16）
-rep -- 进制 （生成的链接可以十六进制或十进制值表示）
 ```
 # abbrlink 配置
 abbrlink:
-  alg: crc32      # 支持 crc16(默认) 和 crc32
-  rep: hex        # 支持 dec(默认/十进制) and hex(十六进制)
+  alg: crc32      # 算法--支持 crc16(默认) 和 crc32
+  rep: hex        # 进制--支持 dec(默认/十进制) and hex(十六进制)
   drafts: false   # (true)处理草稿/(false)默认不处理草稿
 ```
 ## 使用 Qexo 自动填写
