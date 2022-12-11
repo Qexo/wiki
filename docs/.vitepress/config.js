@@ -46,6 +46,7 @@ module.exports = {
                 text: '实践',
                 items: [
                     { text: 'SM.MS图床', link: '/practice/smms' },
+                    { text: '使用短链接', link: '/practice/abbrlink'}
                 ]
             },
             {
