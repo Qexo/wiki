@@ -2,15 +2,15 @@
 这个教程将帮助你为博客接入唯一链接，使你的博客链接更加简洁。
 ## 接入短链接
 安装 Hexo 插件
-```
+```shell
 npm install hexo-abbrlink --save
 ```
 在 `_config.yml` 文件中修改文章固定连接:
-```
+```yaml
 permalink: posts/:abbrlink/     # 可改为你需要的连接，例如archives/:abbrlink.html
 ```
 然后添加两个设置:
-```
+```yaml
 # abbrlink 配置
 abbrlink:
   alg: crc32      # 算法--支持 crc16(默认) 和 crc32
