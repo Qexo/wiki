@@ -135,7 +135,7 @@
   resolved "https://registry.npmmirror.com/@docsearch/css/-/css-3.3.0.tgz"
   integrity sha512-rODCdDtGyudLj+Va8b6w6Y85KE85bXRsps/R4Yjwt5vueXKXZQKYw0aA9knxLBT6a/bI/GMrAcmCR75KYOM6hg==
 
-"@docsearch/js@^3.3.0":
+"@docsearch/js@3", "@docsearch/js@^3.3.0":
   version "3.3.0"
   resolved "https://registry.npmmirror.com/@docsearch/js/-/js-3.3.0.tgz"
   integrity sha512-oFXWRPNvPxAzBhnFJ9UCFIYZiQNc3Yrv6912nZHw/UIGxsyzKpNRZgHq8HDk1niYmOSoLKtVFcxkccpQmYGFyg==
@@ -577,7 +577,7 @@ vite@^3.2.3:
 
 vitepress@^1.0.0-alpha.29:
   version "1.0.0-alpha.29"
-  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-alpha.29.tgz#9c4a4012efe2b37e223dfaa4dab03ee9fa777d1e"
+  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-alpha.29.tgz"
   integrity sha512-oaRaeMLcN9M3Bxz97fFVF6Gzm3Aqtb0CijTt5TOW0XPzNPuKA0YpFnsmS97gdKmA+VztM6itRJ8K7JJuU0VS3g==
   dependencies:
     "@docsearch/css" "^3.3.0"

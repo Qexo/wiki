@@ -1,9 +1,16 @@
 module.exports = {
     title: 'Qexo',
     base: '/qexo/',
-    description: '一个快速、强大、漂亮的在线 Hexo 编辑器',
+    description: '一个快速、强大、漂亮的在线 Hexo 管理器',
     head: [
-        ['link', { rel: 'icon', href: '//unpkg.com/qexo-static@1.4.0/assets/img/brand/favicon.ico' }]
+        ['link', { rel: 'icon', href: '//unpkg.com/qexo-static@1.4.0/assets/img/brand/favicon.ico' }],
+        ['script', {},`var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d6e67b4d53522eb65be1d757678be9d5";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();`]
     ],
     lastUpdated: true,
     markdown: {

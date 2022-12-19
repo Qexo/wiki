@@ -1,10 +1,10 @@
 ---
 layout: home
 title: Qexo
-titleTemplate: 一个快速、美观、强大的在线 Hexo 编辑器
+titleTemplate: 一个快速、美观、强大的在线 Hexo 管理器
 hero:
   name: Qexo
-  text: 一个快速、美观、强大的在线 Hexo 编辑器
+  text: 一个快速、美观、强大的在线 Hexo 管理器
   tagline: 让博客变得简单
   actions:
     - theme: brand
