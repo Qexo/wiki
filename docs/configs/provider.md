@@ -21,7 +21,7 @@ https://blog.cyfan.top/p/e626cb30.html
 
 https://www.oplog.cn/archives/24998.html
 
-https://blog.cyfan.top/p/e626cb30.html
+https://crazywong.com/posts/74006f42
 ### 项目分支
 您 Hexo 自动化部署所在仓库的分支
 ```
