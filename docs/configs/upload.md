@@ -12,10 +12,10 @@ https://7bu.top/api/upload
 ```
 image
 ```
-![](https://user-images.githubusercontent.com/51912589/142446543-257e69f6-3b57-4a0f-8ae7-5884edaf2305.png)
+![](https://pic.hipyt.cn/pic/2023/01/03/2fe2d42c3e5ae.png)
 ### JSON 路径
 图床 API 返回数据中图片 URL 所在的路径，若为整个返回值请留空
-示例：![](https://user-images.githubusercontent.com/51912589/142446701-2acf6b22-4375-4cf7-9bb8-1756a949a1a2.png)
+示例：![](https://pic.hipyt.cn/pic/2023/01/03/84a75fd5cf024.png)
 ```
 data.url
 ```

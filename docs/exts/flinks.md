@@ -1,6 +1,6 @@
 # 友情链接 
 这个教程将帮助你在几分钟内利用 Qexo 为博客接入友链系统
-![](https://user-images.githubusercontent.com/51912589/150155767-61199848-75a0-4f86-bb8f-2916864469ef.png)
+![](https://pic.hipyt.cn/pic/2023/01/03/30ceb421d8e31.png)
 ## 须知
 友链功能要求 Qexo >= 1.5.0 且用户浏览器必须支持文件上传
 ## 添加友链

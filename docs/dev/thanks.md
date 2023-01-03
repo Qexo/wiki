@@ -1,4 +1,4 @@
-Qexo 的诞生离不开这些项目的付出
+Qexo 的诞生离不开这些项目的付出(列表没有持续更新，请通过依赖进一步查询)
 - [Ace](https://ace.c9.io/)
 - [Argon-Dashboard-Django](https://github.com/creativetimofficial/argon-dashboard-django)
 - [Bootstrap](https://getbootstrap.com/)
