@@ -18,8 +18,9 @@
 
 在 Deployments 点击 Redeploy 开始部署，若没有 Error 信息即可打开域名进入初始化引导
 ## Vercel 部署 (MySQL/PlanetScale)
+你可以通过自己的 MySQL 数据库部署或使用 PlanetScale 提供的免费数据库
 ### 申请 PlanetScale 数据库
-[注册 PlanetScale 账号](https://www.planetscale.com/) 创建免费 MySQL 数据库(不支持大陆IP)，区域**一定要选择 AWS / N. Virginia (us-east-1)**，并记录数据库连接信息 *(若自备数据库请跳过该步骤)*
+[注册 PlanetScale 账号](https://www.planetscale.com/) 创建免费 MySQL 数据库(不支持大陆IP)，区域**一定要选择 AWS / N. Virginia (us-east-1)**，并记录数据库连接信息 *(若自备MySQL数据库请跳过该步骤)*
 ### 一键部署
 [![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/am-abudu/Qexo)
 
@@ -34,6 +35,23 @@
 | PlanetScale | (可选)用PlanetScale则设置为1 | 1 |
 
 其中 `PlanetScale` 用于禁用外键约束，以防止PlanetScale数据库部署失败，若你自备数据库且没有特殊需求请**不要填写**
+
+在 Deployments 点击 Redeploy 开始部署，若没有 Error 信息即可打开域名进入初始化引导
+## Vercel 部署 (PostgreSQL/SupaBase)
+你可以通过自己的 PostgreSQL 数据库部署或使用 SupaBase 提供的免费数据库
+### 申请 SupaBase 数据库
+[注册 SupaBase 账号](https://supabase.com) 创建免费 SupaBase 数据库，区域**一定要选择 N. Virginia (us-east-1)** 在项目设置页面获取数据库连接信息，密码即为你所设置的值 *(若自备PostgreSQL数据库请跳过该步骤)*
+### 一键部署
+[![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/am-abudu/Qexo)
+
+首次部署会报错, 请无视并重新进入项目, 在项目设置界面添加环境变量 Environment Variables
+| 名称 | 意义 | 示例 |
+| --- | --- | --- 
+| PG_HOST | PostgreSQL 数据库连接地址 | db.xxx.supabase.co |
+| PG_PORT | PostgreSQL 数据库通信端口 默认应填写 5432 | 5432 |
+| PG_USER | PostgreSQL 数据库用户名 | postgres |
+| PG_DB | PostgreSQL 数据库名 | postgres |
+| PG_PASS | PostgreSQL 数据库密码 | password |
 
 在 Deployments 点击 Redeploy 开始部署，若没有 Error 信息即可打开域名进入初始化引导
 ## 本地部署
