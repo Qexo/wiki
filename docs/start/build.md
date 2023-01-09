@@ -32,9 +32,9 @@
 | MYSQL_USER | MySQL 数据库用户名 | abudu |
 | MYSQL_NAME | MySQL 数据库名 | mydatabase |
 | MYSQL_PASSWORD | MySQL 数据库密码 | password |
-| PlanetScale | (可选)用PlanetScale则设置为1 | 1 |
+| PLANETSCALE | (可选)用PlanetScale则设置为1 | 1 |
 
-其中 `PlanetScale` 用于禁用外键约束，以防止PlanetScale数据库部署失败，若你自备数据库且没有特殊需求请**不要填写**
+其中 `PLANETSCALE` 用于禁用外键约束，以防止PlanetScale数据库部署失败，若你自备数据库且没有特殊需求请**不要填写**
 
 在 Deployments 点击 Redeploy 开始部署，若没有 Error 信息即可打开域名进入初始化引导
 ## Vercel 部署 (PostgreSQL/SupaBase)
