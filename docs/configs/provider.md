@@ -8,7 +8,8 @@ Qexo 在 2.0 版本支持了服务商拓展
 | 删除文件 | √ | √ | √ |
 | Webhook | 自动 | 手动 | × |
 | 自动部署 | Action | Action | 命令行 |
-
+# 博客程序设置
+Qexo 在2.5.2版本开始支持多博客程序(截止2.5.2已支持Hexo和Hugo)
 ## 使用 Github
 如果部署中遇到问题，可以访问 [HPP校验助手](https://hexoplusplus.cronfly.workers.dev/?step=start) 自检配置 *仅支持Github*，若确认无误，可检查仓库内是否有已经发布的文章
 ### Github 仓库
@@ -77,8 +78,17 @@ D:\Hexo
 ```
 /www/myblog
 ```
+### Hugo 路径
+您 Hugo 源码所在本地的绝对路径
+```
+D:\Hugo
+```
+```
+/www/myblog
+```
 ### 自动部署
+#### Hexo
 自动部署命令，将在每次源码修改后执行，若留空则默认不执行
 ```
-hexo clean && hexo g && hexo d
+hugo
 ```
