@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Qexo',
     base: '/qexo/',
-    description: '一个快速、强大、漂亮的在线 多博客程序 管理器',
+    description: '一个快速、强大、漂亮的在线 静态博客 管理器',
     head: [
         ['link', { rel: 'icon', href: '//unpkg.com/qexo-static@1.4.0/assets/img/brand/favicon.ico' }],
         ['script', {},`!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JvwJATuEYs3V2Qun",ck:"JvwJATuEYs3V2Qun",autoTrack:true,hashMode:true});`]
@@ -27,7 +27,7 @@ module.exports = {
             {
                 text: '配置',
                 items: [
-                    { text: '博客程序配置', link: '/configs/provider' },
+                    { text: '博客配置', link: '/configs/provider' },
                     { text: 'Vercel配置', link: '/configs/vercel' },
                     { text: '图床配置', link: '/configs/upload' },
                     { text: '统计配置', link: '/configs/statistic' },
