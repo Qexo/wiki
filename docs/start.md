@@ -16,7 +16,7 @@
 - **麻雀虽小~五脏俱全**
    - 模块化架构
   
-   - 支持多种 Hexo、Hugo 托管商 Github、Gitlab、本地
+   - 支持多种 Hexo、Hugo、valaxy 托管商 Github、Gitlab、本地
   
    - 多种图床协议支持 Github、S3、FTP、远程API
    

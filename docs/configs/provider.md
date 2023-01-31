@@ -9,7 +9,7 @@ Qexo 在 2.0 版本支持了服务商拓展
 | Webhook | 自动 | 手动 | × |
 | 自动部署 | Action | Action | 命令行 |
 # 博客程序设置
-Qexo 在2.5.2版本开始支持多博客程序(截止2.5.2已支持Hexo和Hugo)
+Qexo 在2.5.2版本开始支持多博客程序(截止2.5.2已支持Hexo、Hugo和valaxy)
 ## 使用 Github
 如果部署中遇到问题，可以访问 [HPP校验助手](https://hexoplusplus.cronfly.workers.dev/?step=start) 自检配置 *仅支持Github*，若确认无误，可检查仓库内是否有已经发布的文章
 ### Github 仓库
@@ -25,7 +25,7 @@ https://www.oplog.cn/archives/24998.html
 
 https://crazywong.com/posts/74006f42
 ### 项目分支
-您 Hexo 自动化部署所在仓库的分支
+您 博客源码 自动化部署所在仓库的分支
 ```
 master
 ```
@@ -36,13 +36,13 @@ master
 wrq_P8sYPlYA9fjMlOPEYSKA84xxxxxxxxxxxxxx
 ```
 ### 仓库路径
-您 Hexo 自动化部署所在仓库的路径 若为根目录请留空
+您 博客源码 自动化部署所在仓库的路径 若为根目录请留空
 ```
 path/
 ```
 ## 使用 Gitlab
 ### Gitlab 仓库
-您 Hexo **自动化部署**所在的仓库
+您 博客源码 **自动化部署**所在的仓库
 ```
 username/repo
 ```
@@ -54,7 +54,7 @@ https://www.oplog.cn/archives/24998.html
 
 https://crazywong.com/posts/74006f42
 ### 项目分支
-您 Hexo 自动化部署所在仓库的分支
+您 博客源码 自动化部署所在仓库的分支
 ```
 master
 ```
@@ -65,7 +65,7 @@ master
 wrq_P8sYPlYA9fjMlOPEYSKA84xxxxxxxxxxxxxx
 ```
 ### 仓库路径
-您 Hexo 自动化部署所在仓库的路径 若为根目录请留空
+您 博客源码 自动化部署所在仓库的路径 若为根目录请留空
 ```
 path/
 ```
@@ -88,6 +88,11 @@ D:\Hugo
 ```
 ### 自动部署
 #### Hexo
+自动部署命令，将在每次源码修改后执行，若留空则默认不执行
+```
+hexo clean && hexo g && hexo d
+```
+#### Hugo
 自动部署命令，将在每次源码修改后执行，若留空则默认不执行
 ```
 hugo
