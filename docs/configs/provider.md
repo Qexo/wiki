@@ -13,7 +13,7 @@ Qexo 在2.5.2版本开始支持多博客程序(截止2.5.2已支持Hexo、Hugo�
 ## 使用 Github
 如果部署中遇到问题，可以访问 [HPP校验助手](https://hexoplusplus.cronfly.workers.dev/?step=start) 自检配置 *仅支持Github*，若确认无误，可检查仓库内是否有已经发布的文章
 ### Github 仓库
-您 Hexo **自动化部署**所在的仓库
+您 博客源码 **自动化部署**所在的仓库
 ```
 username/repo
 ```
