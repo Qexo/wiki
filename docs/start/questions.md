@@ -12,7 +12,7 @@ Qexo 中的 Webhook 指 /api/webhook 用于自动化操作，目前可用于自�
 Qexo 每个 Release 都经过 Dev 分支的测试，一般情况下不会出现较大问题，如果你遇到了500等错误，请尝试以下步骤
 1. 检查数据库配置
 2. 清除浏览器缓存 / 程序缓存
-3. 在 `/settings.html` 页面检查 Hexo 服务商配置并点击保存
+3. 在 `/settings.html` 页面检查 博客程序 服务商配置并点击保存
 4. 在 `/advanced.html` 中点击“修复”按钮
 5. 若无法登录请使用API: `/pub/fix?token=(Your API Key)`
 6. 保留数据库配置的环境变量并重新部署
@@ -35,7 +35,7 @@ Qexo 每个 Release 都经过 Dev 分支的测试，一般情况下不会出现�
 ## Github 配置校验错误
 如果配置中遇到问题，可以访问 [HPP校验助手](https://hexoplusplus.cronfly.workers.dev/?step=start) 自检配置，若确认无误，可检查仓库内是否有已经发布的文章
 
-注意：Github 仓库一定为您 Hexo **自动化部署**所在的仓库
+注意：Github 仓库一定为您 博客源码 **自动化部署**所在的仓库
 ## Vercel 用量问题
 Vercel 的无服务器函数用量对于 Qexo 来说是充裕的，但这依然抵挡不住有心之人的攻击行为，所以要保护好自己后台地址，不过好在 Vercel 不会随意扣费，所以在资源用完之后并不会产生费用，若依然不放心可以考虑部署在自己的服务器上 [#服务器部署#](https://github.com/am-abudu/Qexo/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2)
 ## 在线更新失败了
