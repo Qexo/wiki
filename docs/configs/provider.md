@@ -31,7 +31,7 @@ master
 ```
 ### Github 密钥
 于 [Github 设置](https://github.com/settings/tokens) 生成的 Token (建议使用 Classical)
-需要 Repo 下的至少读取和写入权限 *不建议给出所有权限*
+需要 Repo & Workflow 下的权限 *不建议给出所有权限*
 ```
 wrq_P8sYPlYA9fjMlOPEYSKA84xxxxxxxxxxxxxx
 ```
