@@ -22,7 +22,7 @@ hexo new page links
 ```
 4. 将博客推送至你的 Github 仓库
 ## 主题适配
-我和其他开发者为部分主题提供了进一步的适配，如果你使用的是相同主题，可以尝试配置
+我和其他开发者为部分主题提供了进一步的适配, 如果你使用的是相同主题, 可以尝试配置
 ### Volantis
 侧边栏: 
 ```html
@@ -31,7 +31,7 @@ hexo new page links
 <script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/side-friends.js"></script>
 <script>loadQexoFriends("list entry navigation", "网址")</script>
 ```
-由于侧边栏原因，Pjax需要自行配置重载函数
+由于侧边栏原因, Pjax需要自行配置重载函数
 页面: 
 ```html
 <div class="friends-group"><div id="friend-content" class="friend-content"></div></div>
@@ -40,7 +40,7 @@ hexo new page links
 <script>loadQexoFriends("friend-content", "网址")</script>
 ```
 ### Icarus
-侧边栏: 需要修改主题，请参考 [我的博客](https://github.com/am-abudu/hexo_source_code/commit/e0b61ec0fda90fdda949817a394e57f90050ef1a)
+侧边栏: 需要修改主题, 请参考 [我的博客](https://github.com/am-abudu/hexo_source_code/commit/e0b61ec0fda90fdda949817a394e57f90050ef1a)
 
 友链申请页面:
 ```html

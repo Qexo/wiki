@@ -1,12 +1,12 @@
 # 使用 SMMS 图床
-作为远程 API 图床的示例，本文将介绍如何快速为 Qexo 接入 SMMS 图床一键上传
+作为远程 API 图床的示例, 本文将介绍如何快速为 Qexo 接入 SMMS 图床一键上传
 ## API 地址
 参考 [文档](https://doc.sm.ms/#api-Image-Upload) SM.MS的API接口如下：
 ```
 https://sm.ms/api/v2/upload
 ```
 ## POST 参数名
-阅读`参数`一栏，查看请求主体的参数
+阅读`参数`一栏, 查看请求主体的参数
 | 字段 | 类型 | 描述 |
 | --- | --- | --- |
 | smfile | file | 默认值: `multipart/form-data` |
@@ -50,7 +50,7 @@ data.url
 | Content-Type | String | 默认值: `multipart/form-data` |
 | Authorization | String |  |
 
-发现`Content-Type`有默认值，可以留空，而`Authorization`为验证字段，查看 [文档上文](https://doc.sm.ms/#api-_) 需要在请求头进行验证，假设我的 APIKEY 为 `abcdefg123456` 则填写
+发现`Content-Type`有默认值, 可以留空, 而`Authorization`为验证字段, 查看 [文档上文](https://doc.sm.ms/#api-_) 需要在请求头进行验证, 假设我的 APIKEY 为 `abcdefg123456` 则填写
 ```
 {"Authorization": "abcdefg123456"}
 ```
@@ -61,9 +61,9 @@ data.url
 | smfile | file | 默认值: `multipart/form-data` |
 | format | String | Return Type: `json` or `xml`, the default value is `json` |
 
-发现其中`smfile`已经被我们填写，而`format`默认就是我们需要的`json`，故此栏可以留空
+发现其中`smfile`已经被我们填写, 而`format`默认就是我们需要的`json`, 故此栏可以留空
 ## 自定义前缀
-本次教程所使用的 SM.MS 图床无需这项配置，可以留空
+本次教程所使用的 SM.MS 图床无需这项配置, 可以留空
 
 
-现在，你已经完成了所有的配置。实际上远程 API 图床配置大同小异，可以参考这篇教程进行简单的配置就可以使用
+现在, 你已经完成了所有的配置。实际上远程 API 图床配置大同小异, 可以参考这篇教程进行简单的配置就可以使用

@@ -1,7 +1,7 @@
 # 图床配置
-从 2.0.0 开始，Qexo 支持了模块化的图床接入方法，先前的 S3、FTP、Custom 文档合并至此
+从 2.0.0 开始, Qexo 支持了模块化的图床接入方法, 先前的 S3、FTP、Custom 文档合并至此
 ## 远程 API
-Qexo 提供了自定义 API 图床功能，在配置完成图床设置后即可在文章/页面编辑界面上传图片
+Qexo 提供了自定义 API 图床功能, 在配置完成图床设置后即可在文章/页面编辑界面上传图片
 ### API 地址
 图床图片上传的 API
 ```
@@ -14,28 +14,28 @@ image
 ```
 ![](https://pic.hipyt.cn/pic/2023/01/03/2fe2d42c3e5ae.png)
 ### JSON 路径
-图床 API 返回数据中图片 URL 所在的路径，若为整个返回值请留空
+图床 API 返回数据中图片 URL 所在的路径, 若为整个返回值请留空
 示例：![](https://pic.hipyt.cn/pic/2023/01/03/84a75fd5cf024.png)
 ```
 data.url
 ```
 ### 自定义请求头
-POST 请求时附带的请求头，需要标准 JSON 格式，若不需要请留空
+POST 请求时附带的请求头, 需要标准 JSON 格式, 若不需要请留空
 ```json
 {"key":"value"}
 ```
 ### 自定义 BODY
-POST 请求时额外的请求主体，需要标准 JSON 格式，若不需要请留空
+POST 请求时额外的请求主体, 需要标准 JSON 格式, 若不需要请留空
 ```json
 {"key":"value"}
 ```
 ### 自定义前缀
-返回 URL 所需要添加的前缀，若不需要请留空
+返回 URL 所需要添加的前缀, 若不需要请留空
 ```
 some_text_or_url
 ```
 ## S3协议
-Qexo 为 S3 存储桶提供了支持，在配置完成 S3 存储桶设置后即可在文章/页面编辑界面上传图片
+Qexo 为 S3 存储桶提供了支持, 在配置完成 S3 存储桶设置后即可在文章/页面编辑界面上传图片
 ### 应用密钥 ID
 S3 应用程序的 Access Key ID
 ```
@@ -71,7 +71,7 @@ https://s3.us-west-002.backblazeb2.com
 Qexo/{year}/{month}/{md5}.{extName}
 ```
 ### 自定义域名
-返回文件链接的 URL 最终返回的链接，支持关键词同上
+返回文件链接的 URL 最终返回的链接, 支持关键词同上
 ```
 https://file.example.com/file/CDN/Qexo/{year}/{month}/{md5}.{extName}
 ```
@@ -112,7 +112,7 @@ password
 /Qexo/{year}/{month}/{time}.{extName}
 ```
 ### 自定义域名
-返回文件链接的 URL 最终返回的链接，支持关键词同上
+返回文件链接的 URL 最终返回的链接, 支持关键词同上
 ```
 https://file.example.com/file/CDN/Qexo/{year}/{month}/{time}.{extName}
 ```
@@ -149,7 +149,7 @@ wrq_P8sYPlYA9fjMlOPEYSKA84xxxxxxxxxxxxxx
 Qexo/{year}/{month}/{filename}_{md5}.{extName}
 ```
 ### 自定义域名
-返回文件链接的 URL 最终返回的链接，支持关键词同上
+返回文件链接的 URL 最终返回的链接, 支持关键词同上
 ```
 https://github.com/username/repo/raw/master/Qexo/{year}/{month}/{filename}_{md5}.{extName}
 ```
