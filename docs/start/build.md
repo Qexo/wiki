@@ -1,22 +1,5 @@
 # 部署程序
 得益于 Python 强大的跨平台功能, Qexo 支持在各式各样的平台进行部署, 受支持的部署方式为 Vercel 或本地部署。值得注意的一点是, 如果你使用的是 Vercel 部署, 我不建议你自备数据库, 因为你往往无法保证与 Vercel 的连接质量。
-## Vercel 部署 (MongoDB)
-### 申请 MongoDB 数据库
-[注册 MongoDB 账号](https://www.mongodb.com/cloud/atlas/register) 创建免费 MongoDB 数据库, 区域**一定要选择 AWS / N. Virginia (us-east-1)** 在 Clusters 页面点击 CONNECT, 按步骤设置允许所有 IP 地址的连接）, 创建数据库用户, 并记录数据库连接信息, 密码即为你所设置的值
-![](https://pic.hipyt.cn/pic/2023/01/03/e1b3ca7b101fa.png)
-### 一键部署
-[![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/am-abudu/Qexo)
-
-首次部署会报错, 请无视并重新进入项目, 在项目设置界面添加环境变量 Environment Variables
-| 名称 | 意义 | 示例 |
-| --- | --- | --- 
-| MONGODB_HOST | MongoDB 数据库连接地址 | mongodb+srv://cluster0.xxxx.mongodb.net |
-| MONGODB_PORT | MongoDB 数据库通信端口 默认应填写 27017 | 27017 |
-| MONGODB_USER | MongoDB 数据库用户名 | abudu |
-| MONGODB_DB | MongoDB 数据库名 | Cluster0 |
-| MONGODB_PASS | MongoDB 数据库密码 | password |
-
-在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 ## Vercel 部署 (MySQL/PlanetScale)
 你可以通过自己的 MySQL 数据库部署或使用 PlanetScale 提供的免费数据库
 ### 申请 PlanetScale 数据库
@@ -69,6 +52,24 @@
 | PG_USER | PostgreSQL 数据库用户名 | myname |
 | PG_DB | PostgreSQL 数据库名 | myname/trial |
 | PG_PASS | PostgreSQL 数据库密码 | v2_abcd_4ABCDEFGHI |
+
+在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
+## Vercel 部署 (MongoDB)
+鉴于 Djongo 对于 MongoDB 的支持并不够完善, 更建议使用另外的数据库(MySQL/PostgreSQL)
+### 申请 MongoDB 数据库
+[注册 MongoDB 账号](https://www.mongodb.com/cloud/atlas/register) 创建免费 MongoDB 数据库, 区域**一定要选择 AWS / N. Virginia (us-east-1)** 在 Clusters 页面点击 CONNECT, 按步骤设置允许所有 IP 地址的连接）, 创建数据库用户, 并记录数据库连接信息, 密码即为你所设置的值
+![](https://pic.hipyt.cn/pic/2023/01/03/e1b3ca7b101fa.png)
+### 一键部署
+[![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/am-abudu/Qexo)
+
+首次部署会报错, 请无视并重新进入项目, 在项目设置界面添加环境变量 Environment Variables
+| 名称 | 意义 | 示例 |
+| --- | --- | --- 
+| MONGODB_HOST | MongoDB 数据库连接地址 | mongodb+srv://cluster0.xxxx.mongodb.net |
+| MONGODB_PORT | MongoDB 数据库通信端口 默认应填写 27017 | 27017 |
+| MONGODB_USER | MongoDB 数据库用户名 | abudu |
+| MONGODB_DB | MongoDB 数据库名 | Cluster0 |
+| MONGODB_PASS | MongoDB 数据库密码 | password |
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 ## 本地部署
