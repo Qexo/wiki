@@ -25,6 +25,7 @@ hexo new page links
 我和其他开发者为部分主题提供了进一步的适配, 如果你使用的是相同主题, 可以尝试配置
 ### Volantis
 作者：Fgaoxing
+
 侧边栏:
 ```HTML
 <ul class="list entry navigation" id="list entry navigation"></ul>
@@ -33,6 +34,7 @@ hexo new page links
 <script>loadQexoFriends("list entry navigation", "网址")</script>
 ```
 由于侧边栏原因，Pjax需要自行配置重载函数 
+
 且需设置
 ```md
 ---
@@ -48,9 +50,10 @@ title: 我的朋友们 # 可选，这是友链页的标题
 <script>loadQexoFriends("friend-content", "网址")</script>
 ```
 ### Icarus
-作者：abudu
+作者：Abudu
+
 侧边栏: 需要修改主题，请参考 [Abudu的博客]([https://github.com/am-abudu/hexo_source_code/commit/e0b61ec0fda90fdda949817a394e57f90050ef1a](https://www.oplog.cn/archives/8962.html#%E6%B7%BB%E5%8A%A0-Qexo-%E5%8F%8B%E9%93%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F))
-友链申请页面:[友链页面HTML](https://unpkg.com/browse/qexo-friends/Icarus/friend-api.html)
+
 页面：
 ```HTML
 <div id="qexo-friends"></div>
@@ -60,6 +63,7 @@ title: 我的朋友们 # 可选，这是友链页的标题
 ```
 ### Tuhome
 作者：Fgaoxing
+
 页面:
 ```HTML
 <div id="friends"></div>
@@ -69,6 +73,7 @@ title: 我的朋友们 # 可选，这是友链页的标题
 ```
 ### Yun
 作者：Fgaoxing
+
 页面：
 ```HTML
 <div id="links"></div>
@@ -78,6 +83,7 @@ title: 我的朋友们 # 可选，这是友链页的标题
 ```
 ### Stellar
 作者：Fgaoxing
+
 页面：
 ```HTML
 <div id="friend-content" class="friend-content"></div>
@@ -85,6 +91,21 @@ title: 我的朋友们 # 可选，这是友链页的标题
 <script src="https://unpkg.com/qexo-friends/Stellar/friends.js"></script>
 <script>loadQexoFriends("friend-content", "网址")</script>
 ```
+### Jian
+……
+## 友链申请主题适配
+### 默认
+作者：Fgaoxing
+
+```html
+<div id="friends-api"></div>
+<script src="https://unpkg.com/qexo-friends/friends-api.js"></script>
+<script>qexo_friend_api("friends-api","Qexo域名","人机验证秘钥，没有的不填");</script>
+```
+### Icarus
+作者：Abudu
+
+友链申请页面:[友链页面HTML](https://unpkg.com/browse/qexo-friends/Icarus/friend-api.html)
 ### Jian
 ……
 ### Butterfly
@@ -247,13 +268,3 @@ function askFriend (event) {
 </script>
 
 ```
-## 友链申请主题适配
-### 默认
-由 @Fgaoxing 适配的友链申请 API
-```html
-<div id="friends-api"></div>
-<script src="https://unpkg.com/qexo-friends/friends-api.js"></script>
-<script>qexo_friend_api("friends-api","Qexo域名","人机验证秘钥，没有的不填");</script>
-```
-### Jian
-……
