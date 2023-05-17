@@ -36,7 +36,7 @@ hexo new page links
 ```
 由于侧边栏原因，Pjax需要自行配置重载函数 
 且需设置
-```yml
+```yaml
 ---
 layout: friends # 必须
 title: 我的朋友们 # 可选，这是友链页的标题
@@ -260,15 +260,7 @@ function askFriend (event) {
     });
 }
 </script>
-
 ```
-
-
-
-
-
-
-
 ## 友链申请
 由 @Fgaoxing 适配的友链申请 API
 ```html
