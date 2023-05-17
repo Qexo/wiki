@@ -49,7 +49,7 @@ title: 我的朋友们 # 可选，这是友链页的标题
 ```
 ### Icarus
 作者：abudu
-侧边栏: 需要修改主题，请参考 [abudu的博客](https://github.com/am-abudu/hexo_source_code/commit/e0b61ec0fda90fdda949817a394e57f90050ef1a)
+侧边栏: 需要修改主题，请参考 [Abudu的博客]([https://github.com/am-abudu/hexo_source_code/commit/e0b61ec0fda90fdda949817a394e57f90050ef1a](https://www.oplog.cn/archives/8962.html#%E6%B7%BB%E5%8A%A0-Qexo-%E5%8F%8B%E9%93%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F))
 友链申请页面:[友链页面HTML](https://unpkg.com/browse/qexo-friends/Icarus/friend-api.html)
 页面：
 ```HTML
