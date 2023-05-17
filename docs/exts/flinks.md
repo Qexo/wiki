@@ -16,8 +16,8 @@ hexo new page links
 3. 在页面内引入 Qexo-Friends 将其中的 **${SITE}** 改为你的 Qexo 链接 例如 **https://admin.mysite.com**
 ```html
 <div id="qexo-friends"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/friends/friends.css"/>
-<script src="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/friends/friends.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.css"/>
+<script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "${SITE}")</script>
 ```
 4. 将博客推送至你的 Github 仓库
@@ -27,7 +27,7 @@ hexo new page links
 侧边栏: 
 ```html
 <ul class="list entry navigation" id="list entry navigation"></ul>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/friends/friends.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.css"/>
 <script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/side-friends.js"></script>
 <script>loadQexoFriends("list entry navigation", "网址")</script>
 ```
@@ -35,7 +35,7 @@ hexo new page links
 页面: 
 ```html
 <div class="friends-group"><div id="friend-content" class="friend-content"></div></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/friends/friends.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.css"/>
 <script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/friends.js"></script>
 <script>loadQexoFriends("friend-content", "网址")</script>
 ```
@@ -177,7 +177,7 @@ function askFriend (event) {
 页面: 
 ```html
 <div id="friends"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/friends/friends.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.css">
 <script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/tulinks.js"></script>
 <script>loadQexoFriends("friends", "网址")</script>
 ```
