@@ -24,168 +24,83 @@ hexo new page links
 ## 主题适配
 我和其他开发者为部分主题提供了进一步的适配, 如果你使用的是相同主题, 可以尝试配置
 ### Volantis
-侧边栏: 
-```html
+作者：Fgaoxing
+
+侧边栏:
+
+```HTML
 <ul class="list entry navigation" id="list entry navigation"></ul>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.css"/>
-<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/side-friends.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
+<script src="https://unpkg.com/qexo-friends/volantis/side-friends.js"></script>
 <script>loadQexoFriends("list entry navigation", "网址")</script>
 ```
-由于侧边栏原因, Pjax需要自行配置重载函数
-页面: 
-```html
+由于侧边栏原因，Pjax需要自行配置重载函数 
+且需设置
+```yml
+---
+layout: friends # 必须
+title: 我的朋友们 # 可选，这是友链页的标题
+---
+```
+页面:
+
+```HTML
 <div class="friends-group"><div id="friend-content" class="friend-content"></div></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.css"/>
-<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/friends.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
+<script src="https://unpkg.com/qexo-friends/volantis/friends.js"></script>
 <script>loadQexoFriends("friend-content", "网址")</script>
 ```
-### Icarus
-侧边栏: 需要修改主题, 请参考 [我的博客](https://github.com/am-abudu/hexo_source_code/commit/e0b61ec0fda90fdda949817a394e57f90050ef1a)
 
-友链申请页面:
-```html
-<article class="message is-info">
-    <div class="message-header">
-        申请友链
-    </div>
-    <div class="message-body">
-        <div class="form-ask-friend">
-            <div class="field">
-                <label class="label">名称</label>
-                <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="您的站点名" id="friend-name" required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-signature"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">链接</label>
-            <div class="control has-icons-left">
-                <input class="input" type="url" placeholder="您网站首页的链接" id="friend-link" required>
-                <span class="icon is-small is-left">
-                    <i class="fas fa-link"></i>
-                </span>
-            </div>
-            <p class="help ">请确保站点可访问！</p>
-            </div>
-            <div class="field">
-                <label class="label">图标</label>
-                <div class="control has-icons-left">
-                    <input class="input" type="url" placeholder="您的网站图标(尽量为正圆形)" id="friend-icon" required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-image"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">描述</label>
-                <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="请用一句话介绍您的站点" id="friend-des" required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-info"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="field">
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" id="friend-check"/> 我提交的不是无意义信息
-                    </label>
-                </div>
-            </div>
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-info" type="submit" onclick="askFriend(event)">申请友链</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</article>
-<script src="https://recaptcha.net/recaptcha/api.js?render=reCaptcha密钥"></script>
-<script>
-function TestUrl(url) {
-    var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
-    var objExp=new RegExp(Expression);
-    if(objExp.test(url) != true){
-        return false;
-    }
-    return true;
-}
-function askFriend (event) {
-    let check = $("#friend-check").is(":checked");
-    let name = $("#friend-name").val();
-    let url = $("#friend-link").val();
-    let image = $("#friend-icon").val();
-    let des = $("#friend-des").val();
-    if(!check){
-        alert("请勾选\"我提交的不是无意义信息\"");
-        return;
-    }
-    if(!(name&&url&&image&&des)){
-        alert("信息填写不完整! ");
-        return;
-    }
-    if (!(TestUrl(url))){
-        alert("URL格式错误! 需要包含HTTP协议头! ");
-        return;
-    }
-    if (!(TestUrl(image))){
-        alert("图片URL格式错误! 需要包含HTTP协议头! ");
-        return;
-    }
-    event.target.classList.add('is-loading');
-    grecaptcha.ready(function() {
-          grecaptcha.execute('reCaptcha密钥', {action: 'submit'}).then(function(token) {
-              $.ajax({
-                type: 'get',
-                cache: false,
-                url: url,
-                dataType: "jsonp",
-                async: false,
-                processData: false,
-                //timeout:10000, 
-                complete: function (data) {
-                    if(data.status==200){
-                    $.ajax({
-                        type: 'POST',
-                        dataType: "json",
-                        data: {
-                            "name": name,
-                            "url": url,
-                            "image": image,
-                            "description": des,
-                            "verify": token,
-                        },
-                        url: 'https://QEXO域名/pub/ask_friend/',
-                        success: function (data) {
-                            alert(data.msg);
-                        }
-                    });}
-                    else{
-                        alert("URL无法连通!");
-                    }
-                    event.target.classList.remove('is-loading');
-                }
-          });
-        });
-    });
-}
-</script>
+### Icarus
+
+作者：abudu
+
+侧边栏: 需要修改主题，请参考 [abudu的博客](https://github.com/am-abudu/hexo_source_code/commit/e0b61ec0fda90fdda949817a394e57f90050ef1a)
+
+友链申请页面:[友链页面HTML](https://unpkg.com/browse/qexo-friends/Icarus/friend-api.html)
+
+页面：
+```HTML
+<div id="qexo-friends"></div>
+<link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
+<script src="https://unpkg.com/qexo-friends/Icarus/friends.js"></script>
+<script>loadQexoFriends("qexo-friends", "网址")</script>
 ```
-### Tutu
-页面: 
-```html
+
+
+### Tuhome
+作者：Fgaoxing
+
+页面:
+
+```HTML
 <div id="friends"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.css">
-<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/tulinks.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css">
+<script src="https://unpkg.com/qexo-friends/tuhome/friends.js"></script>
 <script>loadQexoFriends("friends", "网址")</script>
 ```
 ### Yun
-```html
-<div id="friends-api"></div>
-<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/friends-api.js"></script>
-<script>qexo_friend_api("friends-api","Qexo域名");</script>
+作者：Fgaoxing
+
+页面：
+```HTML
+<div id="links"></div>
+<link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css">
+<script src="https://unpkg.com/qexo-friends/yun/friends.js"></script>
+<script>loadQexoFriends("links", "网址", "主题色（带#）")</script>
+
+```
+
+### Stellar
+作者：Fgaoxing
+
+页面：
+```HTML
+<div id="friend-content" class="friend-content"></div>
+<link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
+<script src="https://unpkg.com/qexo-friends/Stellar/friends.js"></script>
+<script>loadQexoFriends("friend-content", "网址")</script>
+
 ```
 ## Butterfly主题适配友链
 
