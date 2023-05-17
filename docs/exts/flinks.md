@@ -16,7 +16,7 @@ hexo new page links
 3. 在页面内引入 Qexo-Friends 将其中的 **${SITE}** 改为你的 Qexo 链接 例如 **https://admin.mysite.com**
 ```html
 <div id="qexo-friends"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.css"/>
+<link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "${SITE}")</script>
 ```
@@ -25,9 +25,7 @@ hexo new page links
 我和其他开发者为部分主题提供了进一步的适配, 如果你使用的是相同主题, 可以尝试配置
 ### Volantis
 作者：Fgaoxing
-
 侧边栏:
-
 ```HTML
 <ul class="list entry navigation" id="list entry navigation"></ul>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
@@ -36,29 +34,23 @@ hexo new page links
 ```
 由于侧边栏原因，Pjax需要自行配置重载函数 
 且需设置
-```yaml
+```md
 ---
 layout: friends # 必须
 title: 我的朋友们 # 可选，这是友链页的标题
 ---
 ```
 页面:
-
 ```HTML
 <div class="friends-group"><div id="friend-content" class="friend-content"></div></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://unpkg.com/qexo-friends/volantis/friends.js"></script>
 <script>loadQexoFriends("friend-content", "网址")</script>
 ```
-
 ### Icarus
-
 作者：abudu
-
-侧边栏: 需要修改主题，请参考 [abudu的博客](https://www.oplog.cn/archives/8962.html#%E6%B7%BB%E5%8A%A0-Qexo-%E5%8F%8B%E9%93%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F)
-
+侧边栏: 需要修改主题，请参考 [abudu的博客](https://github.com/am-abudu/hexo_source_code/commit/e0b61ec0fda90fdda949817a394e57f90050ef1a)
 友链申请页面:[友链页面HTML](https://unpkg.com/browse/qexo-friends/Icarus/friend-api.html)
-
 页面：
 ```HTML
 <div id="qexo-friends"></div>
@@ -66,13 +58,9 @@ title: 我的朋友们 # 可选，这是友链页的标题
 <script src="https://unpkg.com/qexo-friends/Icarus/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "网址")</script>
 ```
-
-
 ### Tuhome
 作者：Fgaoxing
-
 页面:
-
 ```HTML
 <div id="friends"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css">
@@ -81,28 +69,25 @@ title: 我的朋友们 # 可选，这是友链页的标题
 ```
 ### Yun
 作者：Fgaoxing
-
 页面：
 ```HTML
 <div id="links"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css">
 <script src="https://unpkg.com/qexo-friends/yun/friends.js"></script>
 <script>loadQexoFriends("links", "网址", "主题色（带#）")</script>
-
 ```
-
 ### Stellar
 作者：Fgaoxing
-
 页面：
 ```HTML
 <div id="friend-content" class="friend-content"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://unpkg.com/qexo-friends/Stellar/friends.js"></script>
 <script>loadQexoFriends("friend-content", "网址")</script>
-
 ```
-## Butterfly主题适配友链
+### Jian
+……
+### Butterfly
 
 > - Edited by [Apursuer](https://iam.apursuer.com/link), 可以进到我的站点康康效果
 >
@@ -111,7 +96,7 @@ title: 我的朋友们 # 可选，这是友链页的标题
 > - 建议使用最新版本qexo，本人使用2.8.1版本测试无误
 > - 先在qexo=>友链 页面配置几条链接，然后再开始动手操作
 
-### 步骤
+#### 步骤
 
 1. 前提你已经配置好了butterfly的link页面，如果没有你可以先`hexo new page links`, 如果还想保留butterfly原样式你可保留link页面`index.md`=>font-matter中的`type: "link"`, 根据个人情况开启`comments: false`
 2. 作者使用了，[Bulma框架](https://bulma.io/)所以css有点不太好搞，如果你使用不加css的友链申请感觉还是有些不美观的，样式大概就像这样![](https://gitcode.net/m0_55338218/apursuer-pics/-/raw/master/pictures/2023/05/13_20_27_45_202305132027788.png)使用了css后是这样的[样式](https://iam.apursuer.com/link).![](https://gitcode.net/m0_55338218/apursuer-pics/-/raw/master/pictures/2023/05/13_20_53_52_202305132053778.png)
@@ -260,11 +245,15 @@ function askFriend (event) {
     });
 }
 </script>
+
 ```
-## 友链申请
+## 友链申请主题适配
+### 默认
 由 @Fgaoxing 适配的友链申请 API
 ```html
 <div id="friends-api"></div>
-<script src="https://cdn.jsdelivr.net/gh/Fgaoxing/blog-cdn@main/source/js/friends-api.js"></script>
-<script>qexo_friend_api("friends-api","Qexo域名");</script>
+<script src="https://unpkg.com/qexo-friends/friends-api.js"></script>
+<script>qexo_friend_api("friends-api","Qexo域名","人机验证秘钥，没有的不填");</script>
 ```
+### Jian
+……
