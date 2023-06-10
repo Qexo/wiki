@@ -1,100 +1,144 @@
-# 友情链接 
+---
+article: ''
+date: ''
+title: ''
+updated: 2023-6-10T23:41:20.822+8:0
+---
+# 友情链接
+
 这个教程将帮助你在几分钟内利用 Qexo 为博客接入友链系统
 ![](https://pic.hipyt.cn/pic/2023/01/03/30ceb421d8e31.png)
+
 ## 须知
-友链功能要求 Qexo >= 1.5.0 且用户浏览器必须支持文件上传
+
+1. 友链功能要求 Qexo >= 1.5.0 且用户浏览器必须支持文件上传
+2. 在使用这个教程前, 你需要先关闭主题自带的有页面的友链系统
+
 ## 添加友链
+
 1. 在 Qexo 侧边栏找到 **友链** 点击进入
 2. 点击右上角 **新增友链** 输入站点名称、链接等数据 其中链接及图片链接**必须包含http协议头**
 3. 点击 **确定** 按键保存友链数据
+
 ## 接入博客
+
 1. 在根目录打开命令行 输入命令**创建页面**
+
 ```shell
 hexo new page links
 ```
+
 2. 打开 **source/links/index.md** 修改页面配置
 3. 在页面内引入 Qexo-Friends 将其中的 **${SITE}** 改为你的 Qexo 链接 例如 **https://admin.mysite.com**
+
 ```html
 <div id="qexo-friends"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "${SITE}")</script>
 ```
+
 4. 将博客推送至你的 Github 仓库
+
 ## 主题适配
+
 我和其他开发者为部分主题提供了进一步的适配, 如果你使用的是相同主题, 可以尝试配置
+
 ### Volantis
+
 作者：Fgaoxing
 
 侧边栏:
+
 ```HTML
 <ul class="list entry navigation" id="list entry navigation"></ul>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://unpkg.com/qexo-friends/volantis/side-friends.js"></script>
 <script>loadQexoFriends("list entry navigation", "网址")</script>
 ```
-由于侧边栏原因，Pjax需要自行配置重载函数 
+
+由于侧边栏原因，Pjax需要自行配置重载函数
 
 且需设置
+
 ```md
 ---
 layout: friends # 必须
 title: 我的朋友们 # 可选，这是友链页的标题
 ---
 ```
+
 页面:
+
 ```HTML
 <div class="friends-group"><div id="friend-content" class="friend-content"></div></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://unpkg.com/qexo-friends/volantis/friends.js"></script>
 <script>loadQexoFriends("friend-content", "网址")</script>
 ```
+
 ### Icarus
+
 作者：Abudu
 
 侧边栏: 需要修改主题，请参考 [Abudu的博客](https://www.oplog.cn/archives/8962.html#%E6%B7%BB%E5%8A%A0-Qexo-%E5%8F%8B%E9%93%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F)
 
 页面：
+
 ```HTML
 <div id="qexo-friends"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://unpkg.com/qexo-friends/Icarus/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "网址")</script>
 ```
+
 ### Tuhome
+
 作者：Fgaoxing
 
 页面:
+
 ```HTML
 <div id="friends"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css">
 <script src="https://unpkg.com/qexo-friends/tuhome/friends.js"></script>
 <script>loadQexoFriends("friends", "网址")</script>
 ```
+
 ### Yun
+
 作者：Fgaoxing
 
 页面：
+
 ```HTML
 <div id="links"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css">
 <script src="https://unpkg.com/qexo-friends/yun/friends.js"></script>
 <script>loadQexoFriends("links", "网址", "主题色（带#）")</script>
 ```
+
 ### Stellar
+
 作者：Fgaoxing
 
 页面：
+
 ```HTML
 <div id="friend-content" class="friend-content"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://unpkg.com/qexo-friends/Stellar/friends.js"></script>
 <script>loadQexoFriends("friend-content", "网址")</script>
 ```
+
 ### Jian
+
 ……
+
 ## 友链申请主题适配
+
 ### 默认
+
 作者：Fgaoxing
 
 ```html
@@ -102,18 +146,21 @@ title: 我的朋友们 # 可选，这是友链页的标题
 <script src="https://unpkg.com/qexo-friends/friends-api.js"></script>
 <script>qexo_friend_api("friends-api","Qexo域名","人机验证秘钥，没有的不填");</script>
 ```
+
 ### Icarus
+
 作者：Abudu
 
 友链申请页面:[友链页面HTML](https://unpkg.com/browse/qexo-friends/Icarus/friend-api.html)
+
 ### Jian
+
 ……
+
 ### Butterfly
 
 > - Edited by [Apursuer](https://iam.apursuer.com/link), 可以进到我的站点康康效果
->
 > - 前提是你已经配置好了qexo，并且可以正常投入使用
->
 > - 建议使用最新版本qexo，本人使用2.8.1版本测试无误
 > - 先在qexo=>友链 页面配置几条链接，然后再开始动手操作
 
