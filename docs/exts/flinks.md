@@ -2,7 +2,7 @@
 article: ''
 date: ''
 title: ''
-updated: 2023-6-10T23:41:20.822+8:0
+updated: 2023-10-03T23:41:20.822+8:0
 ---
 # 友情链接
 
@@ -134,6 +134,19 @@ title: 我的朋友们 # 可选，这是友链页的标题
 ### Jian
 
 ……
+
+## 非适配主题外观优化
+
+### 圆角风格
+
+作者：Ryan璃黯
+
+```html
+<div id="qexo-friends"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static/hexo/friends/ryan/index.css"/>
+<script src="https://cdn.jsdelivr.net/npm/qexo-static/hexo/friends/ryan/index.js"></script>
+<script>loadQexoFriends("qexo-friends", "${SITE}")</script>
+```
 
 ## 友链申请主题适配
 
