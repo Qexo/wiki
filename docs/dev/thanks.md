@@ -2,7 +2,7 @@
 article: ''
 date: ''
 title: ''
-updated: '2023-12-27T22:23:21.499+08:00'
+updated: '2024-01-01T23:15:36.333+08:00'
 ---
 # 鸣谢
 
@@ -18,6 +18,7 @@ Qexo 的诞生和维护依赖着捐助者和开源社区的帮助, 在此我诚�
 - [Edward](https://edwardshh.cn) --- 5CNY
 - [Match_fire](https://match-fire.github.io) --- 6CNY
 - [静雨·安蝉](https://blog.kwxos.top) --- 3.5CNY
+- Xuanli --- 2.33CNY
 
 如果信息有变化或者过久未处理, 请一定要通过[邮箱](mailto:abudulin@foxmail.com)联系我
 
