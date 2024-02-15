@@ -2,7 +2,7 @@
 article: ''
 date: ''
 title: ''
-updated: '2024-02-13T20:25:45.356+08:00'
+updated: '2024-02-15T18:27:19.578+08:00'
 ---
 # 接入说说
 
@@ -47,6 +47,7 @@ Tips: 第三个参数为每页的说说数量, 可结合实际进行修改
 
 或者, 你可以使用现有的美化方案
 
-1. https://uyoahz.cn/2022111530055/
+1. (源自DaoDao)https://uyoahz.cn/2022111530055/
+2. (Stellar主题)https://github.com/MSCMDD/Qexo-Talks
 
 如果你希望你的方案出现在这里, 可以发起 [Discussion](https://github.com/Qexo/Qexo/discussions) 来告诉我
