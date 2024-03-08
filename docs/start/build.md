@@ -2,13 +2,37 @@
 article: ''
 date: ''
 title: ''
-updated: 2023-6-5T23:5:2.581+8:0
+updated: '2024-03-08T23:54:50.985+08:00'
 ---
 # 部署程序
 
 得益于 Python 强大的跨平台功能, Qexo 支持在各式各样的平台进行部署, 受支持的部署方式为 Vercel 或本地部署。值得注意的一点是, 如果你使用的是 Vercel 部署, 我不建议你自备数据库, 因为你往往无法保证与 Vercel 的连接质量。
 
+## Vercel 部署 (PostgreSQL/Vercel)
+
+你可以通过 Vercel 提供的免费数据库。但请注意这是个 Beta 功能
+
+### 一键部署
+
+[![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/am-abudu/Qexo)
+
+首次部署会报错, 请无视并进行接下来的步骤
+
+### 申请 Vercel 数据库
+
+进入[Vercel Storage 界面](https://vercel.com/dashboard/stores) 然后点击右上角的 Create Database 并选择 Postgres 创建免费 PostgreSQL 数据库, 在 Connect 页面获取数据库连接信息。请注意在地区选择的位置选择与你上一步项目对应的地区（通常为 Washington, D.C., USA (East) - iad1）。
+
+### 绑定项目
+
+在左侧边栏选择 Projects 点击 Connect Project 连接到你第一步创建的项目
+
+### 部署
+
+回到你的项目页面，在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
+
 ## Vercel 部署 (MySQL/PlanetScale)
+
+> 流行的数据库平台PlanetScale删除免费计划 开发者必须在4月8日前付费
 
 你可以通过使用 PlanetScale 提供的免费数据库
 
@@ -61,31 +85,9 @@ updated: 2023-6-5T23:5:2.581+8:0
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
-## Vercel 部署 (PostgreSQL/Vercel)
-
-你可以通过 Vercel 提供的免费数据库。但请注意这是个 Beta 功能
-
-### 一键部署
-
-[![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/am-abudu/Qexo)
-
-首次部署会报错, 请无视并进行接下来的步骤
-
-### 申请 Vercel 数据库
-
-进入[Vercel Storage 界面](https://vercel.com/dashboard/stores) 然后点击右上角的 Create Database 并选择 Postgres 创建免费 PostgreSQL 数据库, 在 Connect 页面获取数据库连接信息。请注意在地区选择的位置选择与你上一步项目对应的地区（通常为 Washington, D.C., USA (East) - iad1）。
-
-### 绑定项目
-
-在左侧边栏选择 Projects 点击 Connect Project 连接到你第一步创建的项目
-
-### 部署
-
-回到你的项目页面，在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
-
 ## Vercel 部署 (MongoDB)
 
-鉴于 Djongo 对于 MongoDB 的支持并不够完善, 更建议使用另外的数据库(MySQL/PostgreSQL)
+鉴于 Djongo 对于 MongoDB 的支持并不够完善, 更建议**使用另外的数据库(MySQL/PostgreSQL)**
 
 ### 申请 MongoDB 数据库
 
