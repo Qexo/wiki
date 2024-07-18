@@ -4,7 +4,7 @@ module.exports = {
     description: '一个快速、强大、漂亮的在线 静态博客 管理器',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
-        ['script', {},`!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JvwJATuEYs3V2Qun",ck:"JvwJATuEYs3V2Qun",autoTrack:true,hashMode:true});`]
+        ['script', {},`var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?1bc2cefab19bfc10c993dca7e1513b82";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();`]
     ],
     lastUpdated: true,
     markdown: {
