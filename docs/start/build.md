@@ -6,7 +6,9 @@ updated: '2024-03-08T23:54:50.985+08:00'
 ---
 # 部署程序
 
-得益于 Python 强大的跨平台功能, Qexo 支持在各式各样的平台进行部署, 受支持的部署方式为 Vercel 或本地部署。值得注意的一点是, 如果你使用的是 Vercel 部署, 我不建议你自备数据库, 因为你往往无法保证与 Vercel 的连接质量。
+得益于 Python 强大的跨平台功能, Qexo 支持在各种平台进行部署, 受支持的部署方式为 Vercel 或本地部署。值得注意的一点是, 如果你使用的是 Vercel 部署, 我不建议你自备数据库, 因为你往往无法保证与 Vercel 的连接质量。
+
+>  由于 [Vercel方面的Bug](https://vercel.com/docs/functions/runtimes/python#python-dependencies) 你需要在项目 Settings -> General -> Node.js Version 将 Node.js 版本改为 18.x 以完成部署
 
 ## Vercel 部署 (PostgreSQL/Vercel)
 
