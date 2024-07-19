@@ -2,7 +2,7 @@
 article: ''
 date: ''
 title: ''
-updated: '2024-02-13T21:33:01.641+08:00'
+updated: '2024-07-19T22:47:45.503+08:00'
 ---
 # 图床配置
 
@@ -28,13 +28,12 @@ https://7bu.top/api/upload
 image
 ```
 
-![](https://pic.hipyt.cn/pic/2023/01/03/2fe2d42c3e5ae.png)
+![](https://s2.loli.net/2024/07/19/9IJXAxzrCcKvs3Y.png)
 
 ### JSON 路径
 
 图床 API 返回数据中 **图片 URL** 所在的路径, 若为整个返回值请留空
 示例：
-![https://bu.dusays.com/2024/02/13/65cb708b68a6b.png](https://bu.dusays.com/2024/02/13/65cb708b68a6b.png)
 
 ```
 data.url
@@ -68,7 +67,6 @@ some_text_or_url
 
 图床 API 返回数据中 **删除图片 URL** 所在的路径, 若为不存在请留空
 示例：
-![https://bu.dusays.com/2024/02/13/65cb70ab45e48.png](https://bu.dusays.com/2024/02/13/65cb70ab45e48.png)
 
 ```
 data.delete_url
