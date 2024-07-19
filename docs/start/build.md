@@ -2,13 +2,13 @@
 article: ''
 date: ''
 title: ''
-updated: '2024-03-08T23:54:50.985+08:00'
+updated: '2024-07-19T22:37:48.475+08:00'
 ---
 # 部署程序
 
 得益于 Python 强大的跨平台功能, Qexo 支持在各种平台进行部署, 受支持的部署方式为 Vercel 或本地部署。值得注意的一点是, 如果你使用的是 Vercel 部署, 我不建议你自备数据库, 因为你往往无法保证与 Vercel 的连接质量。
 
->  由于 [Vercel方面的Bug](https://vercel.com/docs/functions/runtimes/python#python-dependencies) 你需要在项目 Settings -> General -> Node.js Version 将 Node.js 版本改为 18.x 以完成部署
+> 由于 [Vercel方面的Bug](https://vercel.com/docs/functions/runtimes/python#python-dependencies) 你需要在项目 Settings -> General -> Node.js Version 将 Node.js 版本改为 18.x 以完成部署
 
 ## Vercel 部署 (PostgreSQL/Vercel)
 
@@ -94,7 +94,7 @@ updated: '2024-03-08T23:54:50.985+08:00'
 ### 申请 MongoDB 数据库
 
 [注册 MongoDB 账号](https://www.mongodb.com/cloud/atlas/register) 创建免费 MongoDB 数据库, 区域**一定要选择 AWS / N. Virginia (us-east-1)** 在 Clusters 页面点击 CONNECT, 按步骤设置允许所有 IP 地址的连接）, 创建数据库用户, 并记录数据库连接信息, 密码即为你所设置的值
-![](https://pic.hipyt.cn/pic/2023/01/03/e1b3ca7b101fa.png)
+![](https://s2.loli.net/2024/07/19/9axCOdNGJWUIqQ7.png)
 
 ### 一键部署
 
