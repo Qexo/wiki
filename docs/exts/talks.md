@@ -2,12 +2,12 @@
 article: ''
 date: ''
 title: ''
-updated: '2024-02-15T18:27:19.578+08:00'
+updated: '2024-07-19T22:39:16.408+08:00'
 ---
 # 接入说说
 
 从2.1.0版本开始, Qexo对说说进行了支持, 你可以参考这个教程为你的博客快速接入说说
-![](https://pic.hipyt.cn/pic/2023/01/03/172d2b1c5e0d5.png)
+![](https://s2.loli.net/2024/07/19/NoIL6QzSVj58HYD.png)
 
 ## 添加说说
 
