@@ -2,7 +2,7 @@
 article: ''
 date: ''
 title: ''
-updated: '2024-01-01T23:15:36.333+08:00'
+updated: '2024-07-21T21:06:49.404+08:00'
 ---
 # 鸣谢
 
@@ -14,6 +14,7 @@ Qexo 的诞生和维护依赖着捐助者和开源社区的帮助, 在此我诚�
 
 - [莫苏子](https://www.mosuzi.com) --- 108CNY
 - [多米诺](https://www.dominoh.com/) --- 50CNY
+- [雪狐](https://blog.snowfox.top) --- 23.33CNY
 - Jeam Umika --- 20CNY
 - [Edward](https://edwardshh.cn) --- 5CNY
 - [Match_fire](https://match-fire.github.io) --- 6CNY
