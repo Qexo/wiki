@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/Qexo/Qexo
+  image:
+    src: https://s2.loli.net/2024/08/25/sFHO2tV5SjWPvnB.png
+    alt: Qexo
 
 features:
   - icon: 🍃
