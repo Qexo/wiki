@@ -1,12 +1,13 @@
 {
   "name": "qexo-wiki",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Qexo online wiki",
   "main": "index.js",
   "author": "Abudu",
   "license": "GPL 3.0",
+  "type": "module",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.29"
+    "vitepress": "^1.3.3"
   },
   "scripts": {
     "dev": "vitepress dev docs",
