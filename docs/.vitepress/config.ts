@@ -151,5 +151,12 @@ export default defineConfig({
   },
   themeConfig: {
     socialLinks: [{ icon: "github", link: "https://github.com/Qexo/Qexo" }],
+    editLink: {
+      pattern: 'https://github.com/qexo/wiki/edit/master/docs/:path'
+    },
+    footer: {
+      message: 'Released under the GPL3.0 License.',
+      copyright: 'Copyright © 2021-present Abudu'
+    }
   },
 });
