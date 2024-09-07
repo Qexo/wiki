@@ -122,7 +122,7 @@ https://s3.us-west-002.backblazeb2.com
 | *{MONTH}*    | 当前月份        | 01                               |
 | *{DAY}*      | 当前日份        | 02                               |
 | *{filename}* | 无后缀的文件名  | image                            |
-| {time}       | 时间戳          | 1640186955.4339228               |
+| *{time}*     | 时间戳          | 1640186955.4339228               |
 | *{extName}*  | 文件后缀名      | png                              |
 | *{md5}*      | 图片的 Md5-Hash | 0c8bfe6821a91c3d96b25e2ea2dcf827 |
 
@@ -189,7 +189,7 @@ password
 | *{DAY}*      | 当前日份        | 02                               |
 | *{filename}* | 无后缀的文件名  | image                            |
 | *{time}*     | 时间戳          | 1640186955.4339228               |
-| {md5}        | 图片的 Md5-Hash | 0c8bfe6821a91c3d96b25e2ea2dcf827 |
+| *{md5}*      | 图片的 Md5-Hash | 0c8bfe6821a91c3d96b25e2ea2dcf827 |
 | *{extName}*  | 文件后缀名      | png                              |
 
 ```

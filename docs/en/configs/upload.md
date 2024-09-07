@@ -121,7 +121,7 @@ Path where the file will be saved after upload, including the file name
 | *{MONTH}*     | Current month     | 01                                |
 | *{DAY}*       | Current day       | 02                                |
 | *{filename}*  | Filename without extension | image                        |
-| {time}        | Timestamp         | 1640186955.4339228                |
+| *{time}*      | Timestamp         | 1640186955.4339228                |
 | *{extName}*   | File extension    | png                               |
 | *{md5}*       | Image MD5-Hash    | 0c8bfe6821a91c3d96b25e2ea2dcf827  |
 
@@ -187,7 +187,7 @@ Path where the file will be saved after upload, including the file name
 | *{DAY}*       | Current day       | 02                                |
 | *{filename}*  | Filename without extension | image                        |
 | *{time}*      | Timestamp         | 1640186955.4339228                |
-| {md5}         | Image MD5-Hash    | 0c8bfe6821a91c3d96b25e2ea2dcf827  |
+| *{md5}*       | Image MD5-Hash    | 0c8bfe6821a91c3d96b25e2ea2dcf827  |
 | *{extName}*   | File extension    | png                               |
 
 ```

@@ -29,6 +29,7 @@ Qexo's development would not have been possible without the contributions of the
 - [Notyf](https://github.com/caroso1222/notyf)
 - [Django](https://github.com/django/django)
 - [Djongo](https://github.com/nesdis/djongo)
+- [Vditor](https://github.com/Vanessa219/vditor)
 - [HexoPlusPlus](https://github.com/HexoPlusPlus/HexoPlusPlus)
 - [jQuery](https://jquery.com/)
 - [OnePush](https://github.com/y1ndan/onepush)

@@ -35,6 +35,7 @@ Qexo 的诞生离不开这些项目的付出(列表没有持续更新, 请通过
 - [Notyf](https://github.com/caroso1222/notyf)
 - [Django](https://github.com/django/django)
 - [Djongo](https://github.com/nesdis/djongo)
+- [Vditor](https://github.com/Vanessa219/vditor)
 - [HexoPlusPlus](https://github.com/HexoPlusPlus/HexoPlusPlus)
 - [jQuery](https://jquery.com/)
 - [OnePush](https://github.com/y1ndan/onepush)
