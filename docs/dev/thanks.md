@@ -12,14 +12,15 @@ Qexo 的诞生和维护依赖着捐助者和开源社区的帮助, 在此我诚�
 
 项目的维护不会给我带来直接的收益, 捐助者们的支持是我维护这个项目的动力, 感谢支持！
 
-- [莫苏子](https://www.mosuzi.com) --- 108CNY
-- [多米诺](https://www.dominoh.com/) --- 50CNY
-- [雪狐](https://blog.snowfox.top) --- 23.33CNY
-- Jeam Umika --- 20CNY
-- [Edward](https://edwardshh.cn) --- 5CNY
-- [Match_fire](https://match-fire.github.io) --- 6CNY
-- [静雨·安蝉](https://blog.kwxos.top) --- 3.5CNY
-- Xuanli --- 2.33CNY
+- [莫苏子](https://www.mosuzi.com) --- 108 CNY
+- [多米诺](https://www.dominoh.com/) --- 50 CNY
+- [雪狐](https://blog.snowfox.top) --- 23.33 CNY
+- Jeam Umika --- 20 CNY
+- [Edward](https://edwardshh.cn) --- 5 CNY
+- [Match_fire](https://match-fire.github.io) --- 6 CNY
+- [静雨·安蝉](https://blog.kwxos.top) --- 3.5 CNY
+- [墨离](https://molikaihe.pages.dev/) --- 3.39 CNY
+- Xuanli --- 2.33 CNY
 
 如果信息有变化或者过久未处理, 请一定要通过[邮箱](mailto:abudulin@foxmail.com)联系我
 
