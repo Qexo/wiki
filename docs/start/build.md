@@ -6,7 +6,9 @@ updated: '2024-07-21T23:40:37.381+08:00'
 ---
 # 部署程序
 
-得益于 Python 强大的跨平台功能, Qexo 支持在各种平台进行部署, 受支持的部署方式为 Vercel 或本地部署。值得注意的一点是, 如果你使用的是 Vercel 部署, 我不建议你自备数据库, 因为你往往无法保证与 Vercel 的连接质量。
+得益于 Python 强大的跨平台功能, Qexo 支持在各种平台进行部署, 受支持的部署方式为 Vercel 或 Docker 部署。本地源码部署只建议高级用户使用。
+
+值得注意的一点是, 如果你使用的是 Vercel 部署, 我不建议你自备数据库, 因为你往往无法保证与 Vercel 的连接质量。
 
 > 由于 [Vercel方面的Bug](https://vercel.com/docs/functions/runtimes/python#python-dependencies) 你需要在项目 Settings -> General -> Node.js Version 将 Node.js 版本改为 18.x 以完成部署
 
@@ -87,7 +89,8 @@ updated: '2024-07-21T23:40:37.381+08:00'
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
-## Vercel 部署 (MongoDB)
+
+## Vercel 部署 (MongoDB/不推荐)
 
 鉴于 Djongo 对于 MongoDB 的支持并不够完善, 更建议**使用另外的数据库(MySQL/PostgreSQL)**
 
@@ -113,11 +116,45 @@ updated: '2024-07-21T23:40:37.381+08:00'
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
-## 本地部署
+## Docker 部署
+建议使用 Docker 在随时随地一键部署 Qexo 应用
+
+```bash
+docker run -d \
+    --restart=unless-stopped \
+    -v $(pwd)/db:/app/db \
+    -p 8000:8000 \
+    -e TIMEOUT=600 \
+    --name="qexo" \
+    abudulin/qexo:latest
+```
+其中 `$(pwd)/db` 为数据存储目录, 你可以改为需要的地址
+
+如果你需要 Dev 分支, 请拉取 `qexo:testing`
+
+当然, 你也可以使用 docker-compose
+```yml
+version: '3.8'
+
+services:
+  qexo:
+    image: abudulin/qexo:latest
+    container_name: qexo
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      WORKERS: 4
+      THREADS: 4
+      TIMEOUT: 600
+    volumes:
+      - ./db:/app/db
+```
+## 本地源码部署 (高级)
 
 从 2.0 版本开始, Qexo 对本地部署进行了较为完善的支持
 
-由于本地部署问题的多样性及不确定性, 维护者不能保证给予有效的支持, 只建议高级用户操作, 且需要自行配置本地 Python3 环境
+由于本地部署问题的多样性及不确定性, 维护者不能保证给予有效的支持, 一般用户建议使用 Docker 部署。只建议高级用户使用源码部署, 需要自行配置本地 Python3 环境
 
 如果要使用本地部署, 请使用2.0+版本或Dev分支
 
@@ -175,3 +212,4 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py runserver 0.0.0.0:8000 --noreload
 ```
+生产环境下，建议更换至 uWSGI 或 Gunicorn
