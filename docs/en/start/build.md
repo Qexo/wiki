@@ -114,7 +114,7 @@ Click Redeploy in Deployments to start the deployment. If there is no Error mess
 
 ## Docker Deployment
 
-It is recommended to use Docker to deploy the Qexo application anytime, anywhere with one click.
+It is recommended to use Docker to deploy the Qexo application anywhere with one click.
 
 ```bash
 docker run -d \

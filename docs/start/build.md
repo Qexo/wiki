@@ -10,7 +10,40 @@ updated: '2024-07-21T23:40:37.381+08:00'
 
 值得注意的一点是, 如果你使用的是 Vercel 部署, 我不建议你自备数据库, 因为你往往无法保证与 Vercel 的连接质量。
 
-> 由于 [Vercel方面的Bug](https://vercel.com/docs/functions/runtimes/python#python-dependencies) 你需要在项目 Settings -> General -> Node.js Version 将 Node.js 版本改为 18.x 以完成部署
+## Docker 部署
+建议使用 Docker 随时随地一键部署 Qexo 应用
+
+```bash
+docker run -d \
+    --restart=unless-stopped \
+    -v $(pwd)/db:/app/db \
+    -p 8000:8000 \
+    -e TIMEOUT=600 \
+    --name="qexo" \
+    abudulin/qexo:latest
+```
+其中 `$(pwd)/db` 为数据存储目录, 你可以改为需要的地址
+
+如果你需要 Dev 分支, 请拉取 `qexo:testing`
+
+当然, 你也可以使用 docker-compose
+```yml
+version: '3.8'
+
+services:
+  qexo:
+    image: abudulin/qexo:latest
+    container_name: qexo
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      WORKERS: 4
+      THREADS: 4
+      TIMEOUT: 600
+    volumes:
+      - ./db:/app/db
+```
 
 ## Vercel 部署 (PostgreSQL/Vercel)
 
@@ -116,40 +149,6 @@ updated: '2024-07-21T23:40:37.381+08:00'
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
-## Docker 部署
-建议使用 Docker 在随时随地一键部署 Qexo 应用
-
-```bash
-docker run -d \
-    --restart=unless-stopped \
-    -v $(pwd)/db:/app/db \
-    -p 8000:8000 \
-    -e TIMEOUT=600 \
-    --name="qexo" \
-    abudulin/qexo:latest
-```
-其中 `$(pwd)/db` 为数据存储目录, 你可以改为需要的地址
-
-如果你需要 Dev 分支, 请拉取 `qexo:testing`
-
-当然, 你也可以使用 docker-compose
-```yml
-version: '3.8'
-
-services:
-  qexo:
-    image: abudulin/qexo:latest
-    container_name: qexo
-    restart: unless-stopped
-    ports:
-      - "8000:8000"
-    environment:
-      WORKERS: 4
-      THREADS: 4
-      TIMEOUT: 600
-    volumes:
-      - ./db:/app/db
-```
 ## 本地源码部署 (高级)
 
 从 2.0 版本开始, Qexo 对本地部署进行了较为完善的支持
