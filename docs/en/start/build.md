@@ -10,7 +10,41 @@ Thanks to Python's powerful cross-platform capabilities, Qexo supports deploymen
 
 It is worth noting that if you are using Vercel for deployment, I do not recommend using your own database, as you often cannot guarantee the connection quality with Vercel.
 
-> Due to a [bug on Vercel's side](https://vercel.com/docs/functions/runtimes/python#python-dependencies), you need to change the Node.js version to 18.x in the project Settings -> General -> Node.js Version to complete the deployment.
+## Docker Deployment
+
+It is recommended to use Docker to deploy the Qexo application anywhere with one click.
+
+```bash
+docker run -d \
+    --restart=unless-stopped \
+    -v $(pwd)/db:/app/db \
+    -p 8000:8000 \
+    -e TIMEOUT=600 \
+    --name="qexo" \
+    abudulin/qexo:latest
+```
+Where `$(pwd)/db` is the data storage directory, you can change it to the desired address.
+
+If you need the Dev branch, please pull `qexo:testing`.
+
+Of course, you can also use docker-compose.
+```yml
+version: '3.8'
+
+services:
+  qexo:
+    image: abudulin/qexo:latest
+    container_name: qexo
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      WORKERS: 4
+      THREADS: 4
+      TIMEOUT: 600
+    volumes:
+      - ./db:/app/db
+```
 
 ## Vercel Deployment (PostgreSQL/Vercel)
 
@@ -112,41 +146,6 @@ The first deployment will report an error, please ignore it and re-enter the pro
 
 Click Redeploy in Deployments to start the deployment. If there is no Error message, you can open the domain to enter the initialization guide.
 
-## Docker Deployment
-
-It is recommended to use Docker to deploy the Qexo application anywhere with one click.
-
-```bash
-docker run -d \
-    --restart=unless-stopped \
-    -v $(pwd)/db:/app/db \
-    -p 8000:8000 \
-    -e TIMEOUT=600 \
-    --name="qexo" \
-    abudulin/qexo:latest
-```
-Where `$(pwd)/db` is the data storage directory, you can change it to the desired address.
-
-If you need the Dev branch, please pull `qexo:testing`.
-
-Of course, you can also use docker-compose.
-```yml
-version: '3.8'
-
-services:
-  qexo:
-    image: abudulin/qexo:latest
-    container_name: qexo
-    restart: unless-stopped
-    ports:
-      - "8000:8000"
-    environment:
-      WORKERS: 4
-      THREADS: 4
-      TIMEOUT: 600
-    volumes:
-      - ./db:/app/db
-```
 ## Local Source Code Deployment (Advanced)
 
 Starting from version 2.0, Qexo has provided more comprehensive support for local deployment.
