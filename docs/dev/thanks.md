@@ -21,6 +21,7 @@ Qexo 的诞生和维护依赖着捐助者和开源社区的帮助, 在此我诚�
 - [静雨·安蝉](https://blog.kwxos.top) --- 3.5 CNY
 - [墨离](https://molikaihe.pages.dev/) --- 3.39 CNY
 - Xuanli --- 2.33 CNY
+- [小奥](https://aokaoka.top) --- 2 CNY
 
 如果信息有变化或者过久未处理, 请一定要通过[邮箱](mailto:abudulin@foxmail.com)联系我
 

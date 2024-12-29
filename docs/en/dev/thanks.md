@@ -15,6 +15,7 @@ Maintaining the project does not bring me direct financial benefits, and the sup
 - [静雨·安蝉](https://blog.kwxos.top) --- 3.5 CNY
 - [墨离](https://molikaihe.pages.dev/) --- 3.39 CNY
 - Xuanli --- 2.33 CNY
+- [小奥](https://aokaoka.top) --- 2 CNY
 
 If there are any changes or if the information has not been updated for a long time, please contact me via [email](mailto:abudulin@foxmail.com).
 
