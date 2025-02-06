@@ -40,5 +40,20 @@ Qexo 每个 Release 都经过 Dev 分支的测试, 一般情况下不会出现�
 Vercel 的无服务器函数用量对于 Qexo 来说是充裕的, 但这依然抵挡不住有心之人的攻击行为, 所以要保护好自己后台地址, 不过好在 Vercel 不会随意扣费, 所以在资源用完之后并不会产生费用, 若依然不放心可以考虑部署在自己的服务器上 [#服务器部署#](https://github.com/am-abudu/Qexo/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2)
 ## 在线更新失败了
 检查高级设置中的 VERCEL_TOKEN 和 PROJECT_ID 是否正确为 Qexo 的部署项目
+## 我的 CDN 出现问题
+如果你使用的是 `.top` 域名, 请你不要尝试使用 CNPM 作为 CDN 源, 这会产生致命问题。如果悲剧已经发生, 请使用命令行恢复:
+```shell
+python manage.py shell
+```
+然后运行Python脚本即可
+```python
+from hexoweb.functions import get_setting, save_setting
+save_setting('CDN_PREV', "https://unpkg.com/qexo-static@{version}/qexo")
+```
+## 忘记管理员密码
+如果你很不幸忘记了自己的管理员密码, 修改密码可以直接使用自带的命令行
+```shell
+python manage.py changepassword [user_name]
+```
 ## 其他问题
 如果还有问题, 可以发 [issue](https://github.com/am-abudu/Qexo/issues) 或加入 [HexoPlusPlus交流群](https://jq.qq.com/?_wv=1027&k=rAcnhzqK) 询问

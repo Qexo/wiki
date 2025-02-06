@@ -52,5 +52,20 @@ Vercel's serverless function usage is sufficient for Qexo, but it can't stop mal
 ## Online update failed
 Check whether the VERCEL_TOKEN and PROJECT_ID in advanced settings are correctly set for the Qexo deployment project.
 
+## My CDN is Down
+If you are using a .top domain, please do not attempt to use CNPM as the CDN source, as this can cause critical problems. If the unfortunate event has already occurred, you can recover using the command:
+```shell
+python manage.py shell
+```
+Then run the following Python script:
+```python
+from hexoweb.functions import get_setting, save_setting
+save_setting('CDN_PREV', "https://unpkg.com/qexo-static@{version}/qexo")
+```
+## Forgot Administrator Password
+If you have unfortunately forgotten your administrator password, you can change it directly using the built-in command line:
+```shell
+python manage.py changepassword [user_name]
+```
 ## Other Issues
 If you have more questions, you can submit an [issue](https://github.com/am-abudu/Qexo/issues) or join the [HexoPlusPlus community group](https://jq.qq.com/?_wv=1027&k=rAcnhzqK) to ask.
