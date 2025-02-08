@@ -17,7 +17,7 @@
     站点访问量 <span id="qexo-site-pv">Loading...</span>
     站点访客数 <span id="qexo-site-uv">Loading...</span>
     页面访问量 <span id="qexo-page-pv">Loading...</span>
-    <script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/statistic.js"></script>
+    <script src="https://registry.npmmirror.com/qexo-static/1.6.0/files/hexo/statistic.js"></script>
     <script>
         loadStatistic("https://qexo.yoursite.com")
     </script>

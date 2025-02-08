@@ -63,16 +63,16 @@ onMounted(() => {
 <template>
   <div class="comment-container vp-raw">
     <!-- KaTeX -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-    <component :is="'script'" defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></component>
-    <component :is="'script'" defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></component>
+    <link rel="stylesheet" href="https://registry.npmmirror.com/katex/0.12.0/files/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    <component :is="'script'" defer src="https://registry.npmmirror.com/katex/0.12.0/files/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></component>
+    <component :is="'script'" defer src="https://registry.npmmirror.com/katex/0.12.0/files/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></component>
 
     <!-- lightGallery -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/css/lightgallery.css" integrity="sha384-U8ohOXEVyF0NGY2LQnH83V4wGxOmFhim4U5xhfE/WDCHdPO2iUKPPYkhpDl9U/Yf" crossorigin="anonymous">
-    <component :is="'script'" src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.min.js" integrity="sha384-l5lFB9srHFAyvfCoHya9X1JwGGTNPvDtikieqZp7qu/bomCw0e0+yoyiL0f7UXLD" crossorigin="anonymous"></component>
+    <link rel="stylesheet" href="https://registry.npmmirror.com/lightgallery/2.1.8/files/css/lightgallery.css" integrity="sha384-U8ohOXEVyF0NGY2LQnH83V4wGxOmFhim4U5xhfE/WDCHdPO2iUKPPYkhpDl9U/Yf" crossorigin="anonymous">
+    <component :is="'script'" src="https://registry.npmmirror.com/lightgallery/2.1.8/files/lightgallery.min.js" integrity="sha384-l5lFB9srHFAyvfCoHya9X1JwGGTNPvDtikieqZp7qu/bomCw0e0+yoyiL0f7UXLD" crossorigin="anonymous"></component>
 
     <!-- Twikoo -->
     <div id="twikoo"></div>
-    <component :is="'script'" src="https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.min.js" crossorigin="anonymous" ref="twikooJs"></component>
+    <component :is="'script'" src="https://registry.npmmirror.com/twikoo/1.6.41/files/dist/twikoo.min.js" crossorigin="anonymous" ref="twikooJs"></component>
   </div>
 </template>

@@ -28,8 +28,8 @@ hexo new page talks
 
 ```html
 <div id="qexot"></div>
-<script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/talks.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/talks.css">
+<script src="https://registry.npmmirror.com/qexo-static/1.6.0/files/hexo/talks.js"></script>
+<link rel="stylesheet" href="https://registry.npmmirror.com/qexo-static/1.6.0/files/hexo/talks.css">
 <script>showQexoTalks("qexot", "${SITE}", 5)</script>
 ```
 
@@ -41,7 +41,7 @@ Tips: 第三个参数为每页的说说数量, 可结合实际进行修改
 
 默认的样式比较简陋, 你可以参考以下的教程进行美华
 
-1. 下载 [CSS文件](https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/talks.css)
+1. 下载 [CSS文件](https://registry.npmmirror.com/qexo-static/1.6.0/files/hexo/talks.css)
 2. 编辑样式并引入博客 :)
 3. 如果你需要使用代码高亮请自行引入
 
