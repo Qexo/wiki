@@ -19,7 +19,7 @@ Qexo 的诞生和维护依赖着捐助者和开源社区的帮助, 在此我诚�
 - [Edward](https://edwardshh.cn) --- 5 CNY
 - [Match_fire](https://match-fire.github.io) --- 6 CNY
 - [静雨·安蝉](https://blog.kwxos.top) --- 3.5 CNY
-- [墨离](https://molikaihe.pages.dev/) --- 3.39 CNY
+- [墨离](https://furrycon.top/) --- 5 CNY
 - Xuanli --- 2.33 CNY
 - [小奥](https://aokaoka.top) --- 2 CNY
 
