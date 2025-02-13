@@ -57,3 +57,5 @@ python manage.py changepassword [user_name]
 ```
 ## 其他问题
 如果还有问题, 可以发 [issue](https://github.com/am-abudu/Qexo/issues) 或加入 [HexoPlusPlus交流群](https://jq.qq.com/?_wv=1027&k=rAcnhzqK) 询问
+
+如果你无法通过链接添加 QQ 群, 请使用群号`467731779`
