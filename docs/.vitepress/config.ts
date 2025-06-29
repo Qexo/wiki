@@ -17,7 +17,7 @@ export default defineConfig({
     lineNumbers: true,
   },
   sitemap: {
-    hostname: 'https://www.oplog.cn/qexo/'
+    hostname: 'https://oplog.cn/qexo/'
   },
 
   locales: {

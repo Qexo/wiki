@@ -81,7 +81,7 @@ title: 我的朋友们 # 可选，这是友链页的标题
 
 作者：Abudu
 
-侧边栏: 需要修改主题，请参考 [Abudu的博客](https://www.oplog.cn/archives/8962.html#%E6%B7%BB%E5%8A%A0-Qexo-%E5%8F%8B%E9%93%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F)
+侧边栏: 需要修改主题，请参考 [Abudu的博客](https://oplog.cn/archives/8962.html#%E6%B7%BB%E5%8A%A0-Qexo-%E5%8F%8B%E9%93%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F)
 
 页面：
 

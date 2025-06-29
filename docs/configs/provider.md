@@ -38,7 +38,7 @@ username/repo
 
 https://blog.cyfan.top/p/e626cb30.html
 
-https://www.oplog.cn/archives/24998.html
+https://oplog.cn/archives/24998.html
 
 https://crazywong.com/posts/74006f42
 
@@ -81,7 +81,7 @@ username/repo
 
 https://blog.cyfan.top/p/e626cb30.html
 
-https://www.oplog.cn/archives/24998.html
+https://oplog.cn/archives/24998.html
 
 https://crazywong.com/posts/74006f42
 

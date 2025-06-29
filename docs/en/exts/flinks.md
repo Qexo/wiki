@@ -80,7 +80,7 @@ Page:
 
 Author: Abudu
 
-Sidebar: Requires theme modification. Refer to [Abudu's Blog](https://www.oplog.cn/archives/8962.html#%E6%B7%BB%E5%8A%A0-Qexo-%E5%8F%8B%E9%93%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F)
+Sidebar: Requires theme modification. Refer to [Abudu's Blog](https://oplog.cn/archives/8962.html#%E6%B7%BB%E5%8A%A0-Qexo-%E5%8F%8B%E9%93%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F)
 
 Page:
 
