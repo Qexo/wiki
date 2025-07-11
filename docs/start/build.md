@@ -13,6 +13,8 @@ updated: '2024-07-21T23:40:37.381+08:00'
 ## Docker 部署
 建议使用 Docker 随时随地一键部署 Qexo 应用
 
+> Qexo 已经支持使用 ghcr.io 或 cnb.cool 制品库提取镜像, 如果你是国内用户, 建议将下文中的 `abudulin/qexo` 替换为 `docker.cnb.cool/qexo/qexo` 以加快部署
+
 ```bash
 docker run -d \
     --restart=unless-stopped \

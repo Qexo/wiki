@@ -14,6 +14,8 @@ It is worth noting that if you are using Vercel for deployment, I do not recomme
 
 It is recommended to use Docker to deploy the Qexo application anywhere with one click.
 
+> Qexo now supports pulling images from the ghcr.io or cnb.cool container registries. If you are a user in China, we recommend replacing `abudulin/qexo` in the following text with `docker.cnb.cool/qexo/qexo` to speed up deployment.
+
 ```bash
 docker run -d \
     --restart=unless-stopped \
