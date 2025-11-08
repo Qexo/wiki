@@ -1,3 +1,10 @@
+---
+article: ''
+date: ''
+excerpt: ''
+title: ''
+updated: '2025-11-08T18:06:09.603+08:00'
+---
 # Acknowledgements
 
 The creation and maintenance of Qexo rely on the support of donors and the open-source community. I sincerely thank the following individuals and projects.
@@ -14,6 +21,7 @@ Maintaining the project does not bring me direct financial benefits, and the sup
 - [Match_fire](https://match-fire.github.io) --- 6 CNY
 - [静雨·安蝉](https://blog.kwxos.top) --- 3.5 CNY
 - [墨离](https://furrycon.top/) --- 5 CNY
+- [Hoochanlon](https://github.com/hoochanlon) --- 5 CNY
 - Xuanli --- 2.33 CNY
 - [小奥](https://aokaoka.top) --- 2 CNY
 
