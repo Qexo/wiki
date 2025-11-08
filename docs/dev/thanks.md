@@ -1,8 +1,9 @@
 ---
 article: ''
 date: ''
+excerpt: ''
 title: ''
-updated: '2024-07-21T21:06:49.404+08:00'
+updated: '2025-11-08T18:07:30.647+08:00'
 ---
 # 鸣谢
 
@@ -20,6 +21,7 @@ Qexo 的诞生和维护依赖着捐助者和开源社区的帮助, 在此我诚�
 - [Match_fire](https://match-fire.github.io) --- 6 CNY
 - [静雨·安蝉](https://blog.kwxos.top) --- 3.5 CNY
 - [墨离](https://furrycon.top/) --- 5 CNY
+- [Hoochanlon](https://github.com/hoochanlon) --- 5 CNY
 - Xuanli --- 2.33 CNY
 - [小奥](https://aokaoka.top) --- 2 CNY
 
