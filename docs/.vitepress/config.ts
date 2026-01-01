@@ -1,7 +1,47 @@
 import { defineConfig } from "vitepress";
+import { postChat } from "vitepress-plugin-postchat";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [
+      postChat({
+        // 账户设置
+        key: 'P-915FBDZX7U944XJF', // 可以到 https://ai.tianli0.top/ 获取账户KEY
+
+        // 智能对话设置
+        enableAI: true, // 是否启用智能对话
+        userMode: 'magic', // 可选 'magic' 或 'iframe'
+        postChatConfig: {
+          // 按钮样式配置
+          backgroundColor: "#3e86f6", // 按钮背景颜色
+          fill: "#FFFFFF", // 按钮填充颜色
+          bottom: "16px", // 按钮底部位置
+          left: "16px", // 按钮左侧位置
+          width: "44px", // 按钮宽度
+          
+          // 功能配置
+          defaultInput: false, // 自动填充当前页面标题
+          upLoadWeb: true,   // 上传网站到知识库
+          showInviteLink: true, // 显示邀请链接
+          addButton: true,   // 是否显示悬浮按钮
+          
+          // 界面配置
+          userTitle: "智能助手", // 用户标题
+          userDesc: "如果你对部署的内容有任何疑问，可以来问我哦～", // 用户描述
+          userIcon: "", // 自定义界面图标URL
+          
+          // 预设问题配置
+          defaultChatQuestions: [
+            "如何部署这个项目？",
+            "如何配置图床？",
+            "文章列表没有刷新？",
+            "忘记密码怎么办？"
+          ]
+        }
+      })
+    ]
+  },
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     [
