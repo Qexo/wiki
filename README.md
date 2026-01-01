@@ -6,8 +6,6 @@
 
 [Qexo](https://oplog.cn/qexo/) 文档站点 | Qexo Documentation Site
 
-简体中文
-
 ## 介绍 | Introduction
 
 这是 Qexo 的官方文档站点，使用 VitePress 构建。Qexo 是一个美观、强大的在线静态博客管理器，不只是一个编辑器。
