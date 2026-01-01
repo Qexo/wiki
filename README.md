@@ -95,7 +95,7 @@ docs/
 
 ## 特别感谢 | Special Thanks
 
-文档由 [洪墨AI](https://ai.zhheo.com/) 提供智能助手服务
+文档由 [洪墨AI](https://ai.zhheo.com/console/login?InviteID=79047483) 提供智能助手服务
 
 ## 相关链接 | Links
 
