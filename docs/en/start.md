@@ -1,9 +1,3 @@
----
-article: ''
-date: ''
-title: ''
-updated: '2024-07-19T22:35:37.720+08:00'
----
 # Quick Start
 
 **Qexo** is a fast, powerful and beautiful online **static blog editor**. Uses the GPL3.0 **Open Source** license. Support includes and is not limited to deployment on platforms such as **Vercel**, adding **dynamic** elements to your static blogs!

@@ -1,9 +1,3 @@
----
-article: ''
-date: ''
-title: ''
-updated: '2024-07-19T22:47:45.503+08:00'
----
 # Image Hosting Configuration
 
 Starting from version 2.0.0, Qexo supports a modular approach to image hosting, merging previous S3, FTP, and Custom documentations.

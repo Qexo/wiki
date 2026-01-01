@@ -1,9 +1,3 @@
----
-article: ''
-date: ''
-title: ''
-updated: '2024-07-22T17:30:53.285+08:00'
----
 # Service Provider Settings
 
 Qexo version 2.0 supports service provider extensions.

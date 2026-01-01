@@ -1,9 +1,3 @@
----
-article: ''
-date: ''
-title: ''
-updated: '2024-07-19T22:38:40.315+08:00'
----
 # Adding Friend Links
 
 This tutorial will guide you through integrating a friend link system into your blog using Qexo in just a few minutes.

@@ -1,9 +1,3 @@
----
-article: ''
-date: ''
-title: ''
-updated: '2024-07-21T23:40:37.381+08:00'
----
 # Deploy Application
 
 Thanks to Python's powerful cross-platform capabilities, Qexo supports deployment on various platforms. The supported deployment methods are Vercel or Docker. Local source code deployment is only recommended for advanced users.
