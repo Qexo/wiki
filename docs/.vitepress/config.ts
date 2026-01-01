@@ -8,6 +8,18 @@ export default defineConfig({
       postChat({
         // 账户设置
         key: 'P-915FBDZX7U944XJF', // 可以到 https://ai.tianli0.top/ 获取账户KEY
+        
+        // 文章摘要设置
+        enableSummary: false, // 是否启用文章摘要
+        postSelector: '#VPContent .container > .content', // 文章选择器
+        title: '文章摘要', // 文章摘要标题
+        summaryStyle: 'https://ai.tianli0.top/static/public/postChatUser_summary.min.css', // 文章摘要样式
+        postURL: '*', // 文章URL
+        blacklist: '', // 黑名单
+        wordLimit: 2000, // 字数限制
+        typingAnimate: true, // 是否启用打字动画
+        beginningText: '这篇文章介绍了', // 开始文本
+        summaryTheme: 'default', // 文章摘要主题
 
         // 智能对话设置
         enableAI: true, // 是否启用智能对话
