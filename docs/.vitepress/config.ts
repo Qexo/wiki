@@ -16,7 +16,7 @@ export default defineConfig({
         summaryStyle: 'https://ai.tianli0.top/static/public/postChatUser_summary.min.css', // 文章摘要样式
         postURL: '*', // 文章URL
         blacklist: '', // 黑名单
-        wordLimit: 2000, // 字数限制
+        wordLimit: 10000, // 字数限制
         typingAnimate: true, // 是否启用打字动画
         beginningText: '这篇文章介绍了', // 开始文本
         summaryTheme: 'default', // 文章摘要主题
