@@ -1,10 +1,3 @@
----
-article: ''
-date: ''
-excerpt: ''
-title: ''
-updated: '2025-11-08T18:06:09.603+08:00'
----
 # Acknowledgements
 
 The creation and maintenance of Qexo rely on the support of donors and the open-source community. I sincerely thank the following individuals and projects.
