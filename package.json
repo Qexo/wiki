@@ -15,7 +15,10 @@
     "serve": "vitepress serve docs"
   },
   "dependencies": {
-    "@docsearch/js": "^4.4.0",
+    "@algolia/client-search": "^4.24.0",
+    "@docsearch/css": "4",
+    "@docsearch/js": "4",
+    "@docsearch/react": "4",
     "sitemap": "^9.0.0",
     "vitepress-plugin-postchat": "^0.0.6"
   }

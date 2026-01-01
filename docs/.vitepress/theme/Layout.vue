@@ -7,6 +7,9 @@ const { Layout } = DefaultTheme
 
 <template>
   <Layout>
+    <template #nav-bar-content-after>
+      <div id="docsearch" class="docsearch-wrapper"></div>
+    </template>
     <template #home-features-after>
       <div class="home-comment-container">
         <Twikoo></Twikoo>
@@ -45,5 +48,11 @@ const { Layout } = DefaultTheme
 .twikoo .el-loading-spinner .circular {
   margin-left: auto;
   margin-right: auto;
+}
+
+.docsearch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
 }
 </style>
