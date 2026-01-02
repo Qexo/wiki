@@ -123,7 +123,7 @@ services:
 > django.db.utils.OperationalError: connection to server at "db.xxxxx.supabase.co" (1xx4:qw12:bcda:abcd:x12x:xx23:45xx:xx67), port 5432 failed: Network is unreachable
 > Is the server running on that host and accepting TCP/IP connections?
 > ```
-> 说明 Vercel 仅支持IPv4，没有成功解析 SupaBase免费版的IPv6地址。要解决此问题，请前往SupaBase控制台 -> 右上方connect ，在弹出的面板中，将 Connection String -> Method 修改为 Transaction pooler ，然后点击 View parameters 查看新的数据库连接信息，并按照上表修改对应的 Vercel 环境变量后重新部署。当然，也可以在 SupaBase 升级至专业版，开启IPv4地址
+> 说明 Vercel 仅支持IPv4，没有成功解析 Supabase免费版的IPv6地址。要解决此问题，请前往Supabase控制台 -> 右上方connect ，在弹出的面板中，将 Connection String -> Method 修改为 Transaction pooler ，然后点击 View parameters 查看新的数据库连接信息，并按照上表修改对应的 Vercel 环境变量后重新部署。当然，也可以在 Supabase 升级至专业版，开启IPv4地址
 
 ## Vercel 部署 (MongoDB/不推荐)
 
