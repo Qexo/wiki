@@ -123,7 +123,7 @@ Click Redeploy in Deployments to start the deployment. If there is no Error mess
 > django.db.utils.OperationalError: connection to server at "db.xxxxx.supabase.co" (1xx4:qw12:bcda:abcd:x12x:xx23:45xx:xx67), port 5432 failed: Network is unreachable
 >         Is the server running on that host and accepting TCP/IP connections?
 > ```
-> This indicates that Vercel only supports IPv4 and failed to resolve SupaBase's free tier IPv6 address. To resolve this issue, please go to the SupaBase console -> click connect in the upper right corner. In the pop-up panel, change Connection String -> Method to Transaction pooler, then click View parameters to see the new database connection information. Modify the corresponding Vercel environment variables according to the table above and redeploy. Alternatively, you can upgrade to SupaBase's professional plan to enable IPv4 addresses.
+> This indicates that Vercel only supports IPv4 and fails to resolve Supabase's free tier IPv6 address. To resolve this issue, please go to the Supabase console -> click connect in the upper right corner. In the pop-up panel, change Connection String -> Method to Transaction pooler, then click View parameters to see the new database connection information. Modify the corresponding Vercel environment variables according to the table above and redeploy. Alternatively, you can upgrade to Supabase's professional plan to enable IPv4 addresses.
 
 ## Vercel Deployment (MongoDB/Not Recommended)
 
