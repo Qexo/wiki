@@ -99,14 +99,13 @@ services:
 
 ### 申请 SupaBase 数据库
 
-[注册 SupaBase 账号](https://supabase.com) 创建免费 SupaBase 数据库, 区域**一定要选择 N. Virginia (us-east-1)** 在项目设置页面获取数据库连接信息, 密码即为你所设置的值
+[注册 SupaBase 账号](https://supabase.com) 创建免费 SupaBase 数据库, 区域**一定要选择 N. Virginia (us-east-1)** 在项目设置页面获取数据库连接信息, 密码即为你所设置的值（由于涉及URL解析，建议避免在密码中出现 "@ # &"等符号。如使用，在设置环境变量时须注意转义）
 
 ### 一键部署
 
 [![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/am-abudu/Qexo)
 
 首次部署会报错, 请无视并重新进入项目, 在项目设置界面添加环境变量 Environment Variables
-
 
 | 名称    | 意义                                      | 示例               |
 | ------- | ----------------------------------------- | ------------------ |
@@ -118,6 +117,13 @@ services:
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
+> [!TIP]
+> 如果在Vercel部署时出现以下报错信息：
+> ``` bash
+> django.db.utils.OperationalError: connection to server at "db.xxxxx.supabase.co" (1xx4:qw12:bcda:abcd:x12x:xx23:45xx:xx67), port 5432 failed: Network is unreachable
+> 	Is the server running on that host and accepting TCP/IP connections?
+> ```
+> 说明 Vercel 仅支持IPv4，没有成功解析 SupaBase免费版的IPv6地址。要解决此问题，请前往SupaBase控制台 -> 右上方connect ，在弹出的面板中，将 Connection String -> Method 修改为 Transaction pooler ，然后点击 View parameters 查看新的数据库连接信息，并按照上表修改对应的 Vercel 环境变量后重新部署。当然，也可以在 SupaBase 升级至专业版，开启IPv4地址
 
 ## Vercel 部署 (MongoDB/不推荐)
 
