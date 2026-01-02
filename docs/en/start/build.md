@@ -99,7 +99,7 @@ You can use the free database provided by SupaBase.
 
 ### Apply for SupaBase Database
 
-[Register a SupaBase account](https://supabase.com) to create a free SupaBase database. The region **must be N. Virginia (us-east-1)**. Get the database connection information on the project settings page. The password is the value you set.
+[Register a SupaBase account](https://supabase.com) to create a free SupaBase database. The region **must be N. Virginia (us-east-1)**. Get the database connection information on the project settings page. The password is the value you set (Due to URL parsing considerations, it is recommended to avoid using symbols such as "@ # &" in passwords. If used, pay attention to escaping when setting environment variables).
 
 ### One-click Deployment
 
@@ -116,6 +116,14 @@ The first deployment will report an error, please ignore it and re-enter the pro
 | PG_PASS | PostgreSQL database password          | password              |
 
 Click Redeploy in Deployments to start the deployment. If there is no Error message, you can open the domain to enter the initialization guide.
+
+> [!TIP]
+> If you encounter the following error message when deploying on Vercel:
+> ``` bash
+> django.db.utils.OperationalError: connection to server at "db.xxxxx.supabase.co" (1xx4:qw12:bcda:abcd:x12x:xx23:45xx:xx67), port 5432 failed: Network is unreachable
+>         Is the server running on that host and accepting TCP/IP connections?
+> ```
+> This indicates that Vercel only supports IPv4 and failed to resolve SupaBase's free tier IPv6 address. To resolve this issue, please go to the SupaBase console -> click connect in the upper right corner. In the pop-up panel, change Connection String -> Method to Transaction pooler, then click View parameters to see the new database connection information. Modify the corresponding Vercel environment variables according to the table above and redeploy. Alternatively, you can upgrade to SupaBase's professional plan to enable IPv4 addresses.
 
 ## Vercel Deployment (MongoDB/Not Recommended)
 
