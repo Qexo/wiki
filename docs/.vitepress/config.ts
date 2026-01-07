@@ -127,7 +127,7 @@ export default defineConfig({
         nav: [
           { text: "快速上手", link: "/start.html" },
           {
-            text: "对外API",
+            text: "Public API",
             link: "/dev/api",
           },
           {
