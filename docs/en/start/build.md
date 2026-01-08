@@ -16,6 +16,7 @@ docker run -d \
     -v $(pwd)/db:/app/db \
     -p 8000:8000 \
     -e TIMEOUT=600 \
+  -e DOMAINS="['yourdomain.com','www.yourdomain.com']" \
     --name="qexo" \
     abudulin/qexo:latest
 ```
@@ -38,6 +39,7 @@ services:
       WORKERS: 4
       THREADS: 4
       TIMEOUT: 600
+      DOMAINS: "['yourdomain.com','www.yourdomain.com']"
     volumes:
       - ./db:/app/db
 ```
@@ -88,6 +90,7 @@ The first deployment will report an error, please ignore it and re-enter the pro
 | MYSQL_NAME     | MySQL database name                  | mydatabase                 |
 | MYSQL_PASSWORD | MySQL database password              | password                   |
 | PLANETSCALE    | (Optional) Set to 1 if using PlanetScale | 1                          |
+| DOMAINS        | Required: allowed domain list         | ['yourdomain.com','www.yourdomain.com'] |
 
 The `PLANETSCALE` is used to disable foreign key constraints to prevent PlanetScale database deployment failures. If you are using your own database and have no special requirements, **do not fill in**.
 
@@ -114,6 +117,7 @@ The first deployment will report an error, please ignore it and re-enter the pro
 | PG_USER | PostgreSQL database username          | postgres              |
 | PG_DB   | PostgreSQL database name              | postgres              |
 | PG_PASS | PostgreSQL database password          | password              |
+| DOMAINS | Required: allowed domain list         | ['yourdomain.com','www.yourdomain.com'] |
 
 Click Redeploy in Deployments to start the deployment. If there is no Error message, you can open the domain to enter the initialization guide.
 
@@ -125,9 +129,9 @@ Click Redeploy in Deployments to start the deployment. If there is no Error mess
 > ```
 > This indicates that Vercel only supports IPv4 and fails to resolve Supabase's free tier IPv6 address. To resolve this issue, please go to the Supabase console -> click connect in the upper right corner. In the pop-up panel, change Connection String -> Method to Transaction pooler, then click View parameters to see the new database connection information. Modify the corresponding Vercel environment variables according to the table above and redeploy. Alternatively, you can upgrade to Supabase's professional plan to enable IPv4 addresses.
 
-## Vercel Deployment (MongoDB/Not Recommended)
+## Vercel Deployment (MongoDB)
 
-Considering that Djongo's support for MongoDB is not perfect, it is recommended to **use other databases (MySQL/PostgreSQL)**.
+Qexo now supports using MongoDB as the database. Note that the new version changed the MongoDB connection method; users of older versions may need to reinitialize the database.
 
 ### Apply for MongoDB Database
 
@@ -147,6 +151,7 @@ The first deployment will report an error, please ignore it and re-enter the pro
 | MONGODB_USER | MongoDB database username            | abudu                                      |
 | MONGODB_DB   | MongoDB database name                | Cluster0                                   |
 | MONGODB_PASS | MongoDB database password            | password                                   |
+| DOMAINS      | Required: allowed domain list        | ['yourdomain.com','www.yourdomain.com']    |
 
 Click Redeploy in Deployments to start the deployment. If there is no Error message, you can open the domain to enter the initialization guide.
 
@@ -164,7 +169,7 @@ Download the latest version *Source code (zip)* from [Release](https://github.co
 
 ### Prepare Database
 
-Refer to the [Django official documentation](https://docs.djangoproject.com/en/3.2/ref/databases/).
+Refer to the [Django official documentation](https://docs.djangoproject.com/en/5.2/ref/databases/).
 
 | Official Support | Third-party Support   |
 | ---------------- | --------------------- |
@@ -172,7 +177,7 @@ Refer to the [Django official documentation](https://docs.djangoproject.com/en/3
 | MariaDB          | Firebird              |
 | MySQL            | Google Cloud Spanner  |
 | Oracle           | Microsoft SQL Server  |
-| SQLite           | ......                |
+| SQLite           | MongoDB              |
 
 Note 1: You may need to modify `requirement.txt` to install dependencies according to the database you use.
 
@@ -185,7 +190,7 @@ Take using MySQL as an example. After confirming the installation of related dep
 ```python
 import pymysql
 pymysql.install_as_MySQLdb()
-DOMAINS = ["127.0.0.1", "yoursite.com"]
+DOMAINS = ['yourdomain.com','www.yourdomain.com']
 DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.mysql',
@@ -212,3 +217,13 @@ python3 manage.py migrate
 python3 manage.py runserver 0.0.0.0:8000 --noreload
 ```
 For a production environment, it is recommended to switch to uWSGI or Gunicorn.
+
+```bash
+gunicorn --bind 0.0.0.0:8000 \
+         --workers 4 \
+         --threads 2 \
+         --timeout 600 \
+         --access-logfile - \
+         --error-logfile - \
+         core.wsgi:application
+```

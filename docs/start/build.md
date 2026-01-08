@@ -15,6 +15,7 @@ docker run -d \
     -v $(pwd)/db:/app/db \
     -p 8000:8000 \
     -e TIMEOUT=600 \
+    -e DOMAINS="['yourdomain.com','www.yourdomain.com']" \
     --name="qexo" \
     abudulin/qexo:latest
 ```
@@ -37,6 +38,7 @@ services:
       WORKERS: 4
       THREADS: 4
       TIMEOUT: 600
+      DOMAINS: "['yourdomain.com','www.yourdomain.com']"
     volumes:
       - ./db:/app/db
 ```
@@ -88,6 +90,7 @@ services:
 | MYSQL_NAME     | MySQL 数据库名                       | mydatabase                 |
 | MYSQL_PASSWORD | MySQL 数据库密码                     | password                   |
 | PLANETSCALE    | (可选)用PlanetScale则设置为1         | 1                          |
+| DOMAINS        | 强制要求：允许的域名列表             | ['yourdomain.com','www.yourdomain.com'] |
 
 其中 `PLANETSCALE` 用于禁用外键约束, 以防止PlanetScale数据库部署失败, 若你自备数据库且没有特殊需求请**不要填写**
 
@@ -114,6 +117,7 @@ services:
 | PG_USER | PostgreSQL 数据库用户名                   | postgres           |
 | PG_DB   | PostgreSQL 数据库名                       | postgres           |
 | PG_PASS | PostgreSQL 数据库密码                     | password           |
+| DOMAINS | 强制要求：允许的域名列表                  | ['yourdomain.com','www.yourdomain.com'] |
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
@@ -125,9 +129,9 @@ services:
 > ```
 > 说明 Vercel 仅支持IPv4，没有成功解析 Supabase免费版的IPv6地址。要解决此问题，请前往Supabase控制台 -> 右上方connect ，在弹出的面板中，将 Connection String -> Method 修改为 Transaction pooler ，然后点击 View parameters 查看新的数据库连接信息，并按照上表修改对应的 Vercel 环境变量后重新部署。当然，也可以在 Supabase 升级至专业版，开启IPv4地址
 
-## Vercel 部署 (MongoDB/不推荐)
+## Vercel 部署 (MongoDB)
 
-鉴于 Djongo 对于 MongoDB 的支持并不够完善, 更建议**使用另外的数据库(MySQL/PostgreSQL)**
+目前 Qexo 已支持使用 MongoDB 作为数据库进行部署, 请注意新版本修改了 MongoDB 连接方式, 旧版本用户可能需要重新初始化数据库
 
 ### 申请 MongoDB 数据库
 
@@ -148,6 +152,7 @@ services:
 | MONGODB_USER | MongoDB 数据库用户名                    | abudu                                   |
 | MONGODB_DB   | MongoDB 数据库名                        | Cluster0                                |
 | MONGODB_PASS | MongoDB 数据库密码                      | password                                |
+| DOMAINS      | 强制要求：允许的域名列表                | ['yourdomain.com','www.yourdomain.com'] |
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
@@ -165,7 +170,7 @@ services:
 
 ### 准备数据库
 
-参考 [Django 官方文档](https://docs.djangoproject.com/zh-hans/3.2/ref/databases/)
+参考 [Django 官方文档](https://docs.djangoproject.com/zh-hans/5.2/ref/databases)
 
 
 | 官方支持   | 第三方支持           |
@@ -174,7 +179,7 @@ services:
 | MariaDB    | Firebird             |
 | MySQL      | Google Cloud Spanner |
 | Oracle     | Microsoft SQL Server |
-| SQLite     | ......               |
+| SQLite     | MongoDB              |
 
 注1: 你可能需要根据你使用的数据库修改 `requirement.txt` 以安装依赖
 
@@ -187,7 +192,7 @@ services:
 ```python
 import pymysql
 pymysql.install_as_MySQLdb()
-DOMAINS = ["127.0.0.1", "yoursite.com"]
+DOMAINS = ['yourdomain.com','www.yourdomain.com']
 DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.mysql',
@@ -214,3 +219,12 @@ python3 manage.py migrate
 python3 manage.py runserver 0.0.0.0:8000 --noreload
 ```
 生产环境下，建议更换至 uWSGI 或 Gunicorn
+```bash
+gunicorn --bind 0.0.0.0:8000 \
+         --workers 4 \
+         --threads 2 \
+         --timeout 600 \
+         --access-logfile - \
+         --error-logfile - \
+         core.wsgi:application
+```

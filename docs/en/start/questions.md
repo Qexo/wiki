@@ -67,6 +67,13 @@ If you have unfortunately forgotten your administrator password, you can change 
 ```shell
 python manage.py changepassword [user_name]
 ```
+## Unable to log in (Network Error)
+Please check the error messages in the browser console; this is usually caused by incorrect domain configuration.
+
+The new version improves security. Make sure you correctly configure the `DOMAINS` environment variable, for example:
+```yaml
+DOMAINS: ["yourdomain.com","www.yourdomain.com"]
+```
 ## Other Issues
 If you have more questions, you can submit an [issue](https://github.com/am-abudu/Qexo/issues) or join the [HexoPlusPlus community group](https://jq.qq.com/?_wv=1027&k=rAcnhzqK) to ask.
 

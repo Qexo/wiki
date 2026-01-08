@@ -55,6 +55,13 @@ save_setting('CDN_PREV', "https://unpkg.com/qexo-static@{version}/qexo")
 ```shell
 python manage.py changepassword [user_name]
 ```
+## 无法登录(网络错误)
+请检查浏览器控制台的错误信息, 一般是由于域名配置错误导致的
+
+新版本优化了安全措施, 请确认你在环境变量中正确配置了 DOMAINS 变量, 例如:
+```yaml
+DOMAINS: ["yourdomain.com","www.yourdomain.com"]
+```
 ## 其他问题
 如果还有问题, 可以发 [issue](https://github.com/am-abudu/Qexo/issues) 或加入 [HexoPlusPlus交流群](https://jq.qq.com/?_wv=1027&k=rAcnhzqK) 询问
 
