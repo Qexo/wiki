@@ -34,7 +34,6 @@ This indicates that the "XXX" environment variable was not obtained. Please add 
 
 | Name | Meaning | Example |
 | --- | --- | --- |
-| DOMAINS | The allowed secure domain names for communication. Note the double quotes and English half-width characters. | [".vercel.app", "127.0.0.1", ".yoursite.com"] |
 | MONGODB_HOST | MongoDB database connection address | mongodb+srv://cluster0.xxxx.mongodb.net |
 | MONGODB_PORT | MongoDB database communication port, default is 27017 | 27017 |
 | MONGODB_USER | MongoDB database username | abudu |

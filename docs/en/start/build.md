@@ -90,7 +90,6 @@ The first deployment will report an error, please ignore it and re-enter the pro
 | MYSQL_NAME     | MySQL database name                  | mydatabase                 |
 | MYSQL_PASSWORD | MySQL database password              | password                   |
 | PLANETSCALE    | (Optional) Set to 1 if using PlanetScale | 1                          |
-| DOMAINS        | Required: allowed domain list         | ['yourdomain.com','www.yourdomain.com'] |
 
 The `PLANETSCALE` is used to disable foreign key constraints to prevent PlanetScale database deployment failures. If you are using your own database and have no special requirements, **do not fill in**.
 
@@ -117,7 +116,6 @@ The first deployment will report an error, please ignore it and re-enter the pro
 | PG_USER | PostgreSQL database username          | postgres              |
 | PG_DB   | PostgreSQL database name              | postgres              |
 | PG_PASS | PostgreSQL database password          | password              |
-| DOMAINS | Required: allowed domain list         | ['yourdomain.com','www.yourdomain.com'] |
 
 Click Redeploy in Deployments to start the deployment. If there is no Error message, you can open the domain to enter the initialization guide.
 

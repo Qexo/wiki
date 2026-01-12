@@ -26,7 +26,6 @@ Qexo 每个 Release 都经过 Dev 分支的测试, 一般情况下不会出现�
 表示并没有获取到 "XXX" 这个环境变量, 请根据表格添加后 Redeploy
 | 名称 | 意义 | 示例 |
 | --- | --- | --- |
-| DOMAINS | 你所允许通信的安全域名 注意双引号而且是英文半角 | [".vercel.app", "127.0.0.1", ".yoursite.com"] |
 | MONGODB_HOST | MongoDB 数据库连接地址 | mongodb+srv://cluster0.xxxx.mongodb.net |
 | MONGODB_PORT | MongoDB 数据库通信端口 默认应填写 27017 | 27017 |
 | MONGODB_USER | MongoDB 数据库用户名 | abudu |

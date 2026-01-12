@@ -90,7 +90,7 @@ services:
 | MYSQL_NAME     | MySQL 数据库名                       | mydatabase                 |
 | MYSQL_PASSWORD | MySQL 数据库密码                     | password                   |
 | PLANETSCALE    | (可选)用PlanetScale则设置为1         | 1                          |
-| DOMAINS        | 强制要求：允许的域名列表             | ['yourdomain.com','www.yourdomain.com'] |
+
 
 其中 `PLANETSCALE` 用于禁用外键约束, 以防止PlanetScale数据库部署失败, 若你自备数据库且没有特殊需求请**不要填写**
 
@@ -117,7 +117,6 @@ services:
 | PG_USER | PostgreSQL 数据库用户名                   | postgres           |
 | PG_DB   | PostgreSQL 数据库名                       | postgres           |
 | PG_PASS | PostgreSQL 数据库密码                     | password           |
-| DOMAINS | 强制要求：允许的域名列表                  | ['yourdomain.com','www.yourdomain.com'] |
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
@@ -152,7 +151,6 @@ services:
 | MONGODB_USER | MongoDB 数据库用户名                    | abudu                                   |
 | MONGODB_DB   | MongoDB 数据库名                        | Cluster0                                |
 | MONGODB_PASS | MongoDB 数据库密码                      | password                                |
-| DOMAINS      | 强制要求：允许的域名列表                | ['yourdomain.com','www.yourdomain.com'] |
 
 在 Deployments 点击 Redeploy 开始部署, 若没有 Error 信息即可打开域名进入初始化引导
 
