@@ -15,7 +15,7 @@ docker run -d \
     -v $(pwd)/db:/app/db \
     -p 8000:8000 \
     -e TIMEOUT=600 \
-    -e DOMAINS="['yourdomain.com','www.yourdomain.com']" \
+    -e DOMAINS="[\"yourdomain.com\",\"www.yourdomain.com\"]" \
     --name="qexo" \
     abudulin/qexo:latest
 ```
@@ -38,7 +38,7 @@ services:
       WORKERS: 4
       THREADS: 4
       TIMEOUT: 600
-      DOMAINS: "['yourdomain.com','www.yourdomain.com']"
+      DOMAINS: "[\"yourdomain.com\",\"www.yourdomain.com\"]"
     volumes:
       - ./db:/app/db
 ```
