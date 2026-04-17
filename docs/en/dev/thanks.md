@@ -8,6 +8,7 @@ Maintaining the project does not bring me direct financial benefits, and the sup
 
 - [莫苏子](https://www.mosuzi.com) --- 108 CNY
 - [多米诺](https://www.dominoh.com/) --- 50 CNY
+- Xuanli233 --- 25 CNY
 - [雪狐](https://blog.snowfox.top) --- 23.33 CNY
 - Jeam Umika --- 20 CNY
 - [Edward](https://edwardshh.cn) --- 5 CNY
