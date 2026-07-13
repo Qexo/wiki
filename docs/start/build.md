@@ -179,7 +179,7 @@ services:
 | Oracle     | Microsoft SQL Server |
 | SQLite     | MongoDB              |
 
-注1: 你可能需要根据你使用的数据库修改 `requirement.txt` 以安装依赖
+注1: 你可能需要根据你使用的数据库修改 `requirements.txt` 以安装依赖
 
 注2: 在进行一键更新时，名称为`db`的目录下的文件以及名称为`configs.py`文件将不会被删除，你应该把重要文件（如数据库）放在该文件夹下
 
@@ -206,7 +206,7 @@ DATABASES = {
 }
 ```
 
-如果需要引入其他的库, 或在`init.py`中执行代码, 可以直接在顶部写入`import pymysql`
+如果需要引入其他的库, 或在`configs.py`中执行代码, 可以直接在顶部写入`import pymysql`
 
 ### 执行命令运行
 

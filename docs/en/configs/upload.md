@@ -196,11 +196,11 @@ Final URL of the returned file link, supports the same keywords
 https://file.example.com/file/CDN/Qexo/{year}/{month}/{time}.{extName}
 ```
 
-## Github
+## GitHub
 
-(Not recommended) Upload images to a Github repository to leverage Github Actions for further operations.
+(Not recommended) Upload images to a GitHub repository to leverage GitHub Actions for further operations.
 
-### Github Repository
+### GitHub Repository
 
 Repository where your images are uploaded
 
@@ -216,9 +216,9 @@ Branch in the repository where images need to be uploaded
 master
 ```
 
-### Github Token
+### GitHub Token
 
-Token generated at [Github Settings](https://github.com/settings/tokens)  
+Token generated at [GitHub Settings](https://github.com/settings/tokens)  
 Requires at least read and write permissions for Repo *not recommended to give all permissions*
 
 ```

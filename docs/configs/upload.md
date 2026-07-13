@@ -111,10 +111,10 @@ https://s3.us-west-002.backblazeb2.com
 | ------------ | --------------- | -------------------------------- |
 | *{year}*     | 当前年份        | 21                               |
 | *{month}*    | 当前月份        | 1                                |
-| *{day}*      | 当前日份        | 2                                |
+| *{day}*      | 当前日期        | 2                                |
 | *{YEAR}*     | 当前年份        | 2021                             |
 | *{MONTH}*    | 当前月份        | 01                               |
-| *{DAY}*      | 当前日份        | 02                               |
+| *{DAY}*      | 当前日期        | 02                               |
 | *{filename}* | 无后缀的文件名  | image                            |
 | *{time}*     | 时间戳          | 1640186955.4339228               |
 | *{extName}*  | 文件后缀名      | png                              |
@@ -177,10 +177,10 @@ password
 | ------------ | --------------- | -------------------------------- |
 | *{year}*     | 当前年份        | 21                               |
 | *{month}*    | 当前月份        | 1                                |
-| *{day}*      | 当前日份        | 2                                |
+| *{day}*      | 当前日期        | 2                                |
 | *{YEAR}*     | 当前年份        | 2021                             |
 | *{MONTH}*    | 当前月份        | 01                               |
-| *{DAY}*      | 当前日份        | 02                               |
+| *{DAY}*      | 当前日期        | 02                               |
 | *{filename}* | 无后缀的文件名  | image                            |
 | *{time}*     | 时间戳          | 1640186955.4339228               |
 | *{md5}*      | 图片的 Md5-Hash | 0c8bfe6821a91c3d96b25e2ea2dcf827 |
@@ -198,11 +198,11 @@ password
 https://file.example.com/file/CDN/Qexo/{year}/{month}/{time}.{extName}
 ```
 
-## Github
+## GitHub
 
-(不建议)将图片上传至 Github 仓库以借助 Github Action 进行进一步操作
+(不建议)将图片上传至 GitHub 仓库以借助 GitHub Action 进行进一步操作
 
-### Github仓库
+### GitHub仓库
 
 您图片上传到的仓库
 
@@ -218,9 +218,9 @@ username/repo
 master
 ```
 
-### Github 密钥
+### GitHub 密钥
 
-于 [Github 设置](https://github.com/settings/tokens) 生成的 Token
+于 [GitHub 设置](https://github.com/settings/tokens) 生成的 Token
 需要 Repo 下的至少读取和写入权限 *不建议给出所有权限*
 
 ```
@@ -236,10 +236,10 @@ wrq_P8sYPlYA9fjMlOPEYSKA84xxxxxxxxxxxxxx
 | ------------ | -------------- | -------------------------------- |
 | *{year}*     | 当前年份       | 21                               |
 | *{month}*    | 当前月份       | 1                                |
-| *{day}*      | 当前日份       | 2                                |
+| *{day}*      | 当前日期       | 2                                |
 | *{YEAR}*     | 当前年份       | 2021                             |
 | *{MONTH}*    | 当前月份       | 01                               |
-| *{DAY}*      | 当前日份       | 02                               |
+| *{DAY}*      | 当前日期       | 02                               |
 | *{filename}* | 无后缀的文件名 | image                            |
 | *{time}*     | 时间戳         | 1640186955.4339228               |
 | *{md5}*      | 文件 MD5-Hash  | 0c8bfe6821a91c3d96b25e2ea2dcf827 |

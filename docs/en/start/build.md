@@ -177,7 +177,7 @@ Refer to the [Django official documentation](https://docs.djangoproject.com/en/5
 | Oracle           | Microsoft SQL Server  |
 | SQLite           | MongoDB              |
 
-Note 1: You may need to modify `requirement.txt` to install dependencies according to the database you use.
+Note 1: You may need to modify `requirements.txt` to install dependencies according to the database you use.
 
 Note 2: During one-click updates, files in the directory named `db` and the file named `configs.py` will not be deleted. You should place important files (such as databases) in this folder.
 
@@ -204,7 +204,7 @@ DATABASES = {
 }
 ```
 
-If you need to import other libraries or execute code in `init.py`, you can directly write `import pymysql` at the top.
+If you need to import other libraries or execute code in `configs.py`, you can directly write `import pymysql` at the top.
 
 ### Execute Commands to Run
 

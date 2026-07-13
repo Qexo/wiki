@@ -3,7 +3,7 @@
 Qexo 在 2.0 版本支持了服务商拓展
 
 
-|          | Github | Gitlab     | 本地   |
+|          | GitHub | Gitlab     | 本地   |
 | -------- | ------ | ---------- | ------ |
 | 获取文件 | √     | 无Size数据 | √     |
 | 获取目录 | √     | √         | √     |
@@ -16,11 +16,11 @@ Qexo 在 2.0 版本支持了服务商拓展
 
 Qexo 在2.6版本开始支持多博客程序(截止2.6已支持Hexo、Hugo和Valaxy)
 
-## 使用 Github
+## 使用 GitHub
 
-如果部署中遇到问题, 可以访问 [HPP校验助手](https://hexoplusplus.cronfly.workers.dev/?step=start) 自检配置 *仅支持Github*, 若确认无误, 可检查仓库内是否有已经发布的文章
+如果部署中遇到问题, 可以访问 [HPP校验助手](https://hexoplusplus.cronfly.workers.dev/?step=start) 自检配置 *仅支持GitHub*, 若确认无误, 可检查仓库内是否有已经发布的文章
 
-### Github 仓库
+### GitHub 仓库
 
 您 博客源码 **自动化部署**所在的仓库
 
@@ -44,9 +44,9 @@ https://crazywong.com/posts/74006f42
 master
 ```
 
-### Github 密钥
+### GitHub 密钥
 
-于 [Github 设置](https://github.com/settings/tokens) 生成的 Token (建议使用 Classical)
+于 [GitHub 设置](https://github.com/settings/tokens) 生成的 Token (建议使用 Classical)
 需要 Contents 和 Workflow 两项权限，且访问权限应设置为 Read and write，不建议给出所有权限
 ![GitHub Token 权限设置](https://s3.bmp.ovh/2026/07/13/ao0KsmAq.png)
 
