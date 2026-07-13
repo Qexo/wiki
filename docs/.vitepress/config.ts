@@ -8,7 +8,7 @@ export default defineConfig({
       postChat({
         // 账户设置
         key: 'P-915FBDZX7U944XJF', // 可以到 https://ai.tianli0.top/ 获取账户KEY
-        
+
         // 文章摘要设置
         enableSummary: false, // 是否启用文章摘要
         postSelector: '#VPContent .container > .content', // 文章选择器
@@ -31,18 +31,18 @@ export default defineConfig({
           bottom: "16px", // 按钮底部位置
           left: "16px", // 按钮左侧位置
           width: "44px", // 按钮宽度
-          
+
           // 功能配置
           defaultInput: false, // 自动填充当前页面标题
           upLoadWeb: true,   // 上传网站到知识库
           showInviteLink: true, // 显示邀请链接
           addButton: true,   // 是否显示悬浮按钮
-          
+
           // 界面配置
           userTitle: "智能助手", // 用户标题
           userDesc: "如果你对部署的内容有任何疑问，可以来问我哦～", // 用户描述
           userIcon: "", // 自定义界面图标URL
-          
+
           // 预设问题配置
           defaultChatQuestions: [
             "如何部署这个项目？",
@@ -107,6 +107,7 @@ export default defineConfig({
               { text: "接入说说", link: "/exts/talks" },
               { text: "自定字段", link: "/exts/custom" },
               { text: "访客统计", link: "/exts/statistic" },
+              {text:"OAuth2/OIDC 登录",link:"/exts/oauth2"}
             ],
           },
           {
@@ -172,6 +173,7 @@ export default defineConfig({
               { text: "Qexo Talks", link: "/en/exts/talks" },
               { text: "Custom Fields", link: "/en/exts/custom" },
               { text: "PV Statistic", link: "/en/exts/statistic" },
+              {text:"OAuth2/OIDC Login",link:"/en/exts/oauth2"}
             ],
           },
           {
