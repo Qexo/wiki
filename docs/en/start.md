@@ -19,8 +19,8 @@
 - **Smaller than a sparrow ~ complete in every way** 
 
   - Modularized Architecture
-  - Supports multiple Hexo, Hugo, Valaxy hosts Github, Gitlab, Local
-  - Multiple graph bed protocols support Github, S3, FTP, remote APIs
+  - Supports multiple Hexo, Hugo, Valaxy hosts GitHub, Gitlab, Local
+  - Multiple graph bed protocols support GitHub, S3, FTP, remote APIs
   - Markdown syntax + multiple editing interfaces, what you see is what you get.
   - New interface: Night/Day with one click
   - Multi-format push Bark, Telegram, Pushdeer, Wechat...

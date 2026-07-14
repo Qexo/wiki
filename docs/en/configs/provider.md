@@ -2,7 +2,7 @@
 
 Qexo version 2.0 supports service provider extensions.
 
-|          | Github | Gitlab     | Local   |
+|          | GitHub | Gitlab     | Local   |
 | -------- | ------ | ---------- | ------- |
 | Get File  | √      | No Size Data | √     |
 | Get Directory | √  | √         | √       |
@@ -15,11 +15,11 @@ Qexo version 2.0 supports service provider extensions.
 
 Qexo version 2.6 and later supports multiple blog software (up to 2.6, Hexo, Hugo, and Valaxy are supported).
 
-## Using Github
+## Using GitHub
 
-If you encounter issues during deployment, you can use the [HPP Validation Assistant](https://hexoplusplus.cronfly.workers.dev/?step=start) for configuration self-checks *only supports Github*. If everything is correct, check if there are any published articles in the repository.
+If you encounter issues during deployment, you can use the [HPP Validation Assistant](https://hexoplusplus.cronfly.workers.dev/?step=start) for configuration self-checks *only supports GitHub*. If everything is correct, check if there are any published articles in the repository.
 
-### Github Repository
+### GitHub Repository
 
 The repository where your blog source code **automatically deploys**
 
@@ -41,9 +41,9 @@ The branch of your blog source code repository for automatic deployment
 master
 ```
 
-### Github Token
+### GitHub Token
 
-Token generated at [Github Settings](https://github.com/settings/tokens) (Classical recommended)
+Token generated at [GitHub Settings](https://github.com/settings/tokens) (Classical recommended)
 Requires Contents and Workflow permissions, both set to Read and write (do not provide all permissions)
 ![GitHub Token permission settings](https://s3.bmp.ovh/2026/07/13/ao0KsmAq.png)
 

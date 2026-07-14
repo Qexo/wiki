@@ -19,8 +19,8 @@
 - **麻雀虽小~五脏俱全**
 
   - 模块化架构
-  - 支持多种 Hexo、Hugo、Valaxy 托管商 Github、Gitlab、本地
-  - 多种图床协议支持 Github、S3、FTP、远程API
+  - 支持多种 Hexo、Hugo、Valaxy 托管商 GitHub、Gitlab、本地
+  - 多种图床协议支持 GitHub、S3、FTP、远程API
   - Markdown 语法 + 多种编辑界面, 所见即所得
   - 全新界面 黑夜/白天 一键切换
   - 多形式推送 Bark、Telegram、Pushdeer、Wechat...

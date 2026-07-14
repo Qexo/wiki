@@ -29,11 +29,11 @@ hexo new page talks
 
 Tips: 第三个参数为每页的说说数量, 可结合实际进行修改
 
-4. 将博客推送至你的 Github 仓库
+4. 将博客推送至你的 GitHub 仓库
 
 ## (可选)个性化
 
-默认的样式比较简陋, 你可以参考以下的教程进行美华
+默认的样式比较简陋, 你可以参考以下的教程进行美化
 
 1. 下载 [CSS文件](https://registry.npmmirror.com/qexo-static/1.6.0/files/hexo/talks.css)
 2. 编辑样式并引入博客 :)
