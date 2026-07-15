@@ -11,11 +11,12 @@ Maintaining the project does not bring me direct financial benefits, and the sup
 - Xuanli233 --- 25 CNY
 - [雪狐](https://blog.snowfox.top) --- 23.33 CNY
 - Jeam Umika --- 20 CNY
-- [Edward](https://edwardshh.cn) --- 5 CNY
+- Gyyra --- 6.66 CNY
 - [Match_fire](https://match-fire.github.io) --- 6 CNY
-- [静雨·安蝉](https://blog.kwxos.top) --- 3.5 CNY
+- [Edward](https://edwardshh.cn) --- 5 CNY
 - [墨离](https://furrycon.top/) --- 5 CNY
 - [Hoochanlon](https://github.com/hoochanlon) --- 5 CNY
+- [静雨·安蝉](https://blog.kwxos.top) --- 3.5 CNY
 - Xuanli --- 2.33 CNY
 - [小奥](https://aokaoka.top) --- 2 CNY
 
